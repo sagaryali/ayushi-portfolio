@@ -19,7 +19,7 @@ export default function LoginPage() {
     });
 
     if (res.ok) {
-      router.push("/projects/ai-cloud-infrastructure");
+      window.location.href = "/projects/ai-cloud-infrastructure";
     } else {
       setError("Incorrect password");
       setPassword("");

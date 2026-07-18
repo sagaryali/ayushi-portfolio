@@ -212,9 +212,9 @@ export default function AiCloudInfrastructure() {
           {/* Meta box */}
           <div
             style={{
-              display: "flex",
-              gap: "120px",
-              flexWrap: "wrap",
+              display: "grid",
+              gridTemplateColumns: "1fr 1fr 1.5fr",
+              gap: "40px",
               marginTop: "48px",
             }}
           >
@@ -266,7 +266,7 @@ export default function AiCloudInfrastructure() {
                 </p>
               </div>
             </div>
-            <div style={{ maxWidth: "360px" }}>
+            <div>
               <p
                 className="font-avenir"
                 style={{
@@ -388,6 +388,7 @@ export default function AiCloudInfrastructure() {
                 fontWeight: 400,
                 lineHeight: 1.75,
                 paddingLeft: "24px",
+                listStyleType: "decimal",
               }}
             >
               <li>

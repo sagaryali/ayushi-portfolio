@@ -26,7 +26,7 @@ const projects = [
       "Consolidated a fragmented cloud capacity planning process into a unified workflow across stakeholders. The new system slashed planning time by 80% and minimized idle capacity, directly recovering $3.50 per chip per hour in previously lost revenue.",
   },
   {
-    slug: "project-2",
+    slug: "philips",
     image: "/projects/project-2-cover.png",
     title: "Philips X Gates Foundation: AI for Maternal Healthcare",
     timeline: "August 2022 – July 2023",
@@ -239,9 +239,9 @@ export default function Home() {
                 {/* Meta box */}
                 <div
                   style={{
-                    display: "flex",
-                    gap: "120px",
-                    flexWrap: "wrap",
+                    display: "grid",
+                    gridTemplateColumns: "repeat(3, 1fr)",
+                    gap: "40px",
                     marginTop: "40px",
                     padding: "24px 32px",
                     border: "1px solid #275F55",
@@ -268,7 +268,7 @@ export default function Home() {
                       ))}
                     </div>
                   </div>
-                  <div style={{ maxWidth: "360px" }}>
+                  <div>
                     <p className="font-avenir" style={{ fontSize: "13px", fontWeight: 300, textTransform: "uppercase", letterSpacing: "0.08em", color: "#666" }}>
                       Team
                     </p>

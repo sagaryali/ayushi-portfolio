@@ -238,21 +238,50 @@ export default function About() {
               I build for longevity, ergonomics, and real-world utility.
             </p>
 
-            {/* Row 1: 2 images */}
-            <div style={{ display: "flex", gap: "24px", marginTop: "24px", alignItems: "flex-start" }}>
-              <Image src="/beyond/industrial-1.png" alt="Industrial design 1" width={2160} height={880} style={{ display: "block", height: "320px", width: "auto" }} />
-              <Image src="/beyond/industrial-2.png" alt="Industrial design 2" width={836} height={1032} style={{ display: "block", height: "320px", width: "auto" }} />
-            </div>
-            {/* Row 2: 3 images */}
-            <div style={{ display: "flex", gap: "24px", marginTop: "24px", alignItems: "flex-start" }}>
-              <Image src="/beyond/industrial-3.png" alt="Industrial design 3" width={1132} height={1200} style={{ display: "block", height: "320px", width: "auto" }} />
-              <Image src="/beyond/industrial-4.png" alt="Industrial design 4" width={1076} height={1300} style={{ display: "block", height: "320px", width: "auto" }} />
-              <Image src="/beyond/industrial-5.png" alt="Industrial design 5" width={1042} height={880} style={{ display: "block", height: "320px", width: "auto" }} />
-            </div>
-            {/* Row 3: 2 images */}
-            <div style={{ display: "flex", gap: "24px", marginTop: "24px", alignItems: "flex-start" }}>
-              <Image src="/beyond/industrial-6.png" alt="Industrial design 6" width={1044} height={1136} style={{ display: "block", height: "320px", width: "auto" }} />
-              <Image src="/beyond/industrial-7.png" alt="Industrial design 7" width={2186} height={904} style={{ display: "block", height: "320px", width: "auto" }} />
+            {/* 2-column grid */}
+            <div
+              style={{
+                display: "grid",
+                gridTemplateColumns: "1fr 1fr",
+                gap: "40px",
+                marginTop: "24px",
+              }}
+            >
+              {[
+                { src: "/beyond/industrial-1a.png", alt: "Pop-up gardening cart for elderly", caption: "Design for elderly: A pop-up gardening cart for community common spaces in cities" },
+                { src: "/beyond/industrial-1b.png", alt: "Windfall lighting exhibit design", caption: "Windfall: Lighting Exhibit Design" },
+                { src: "/beyond/industrial-2.png", alt: "Ripples lighting exhibit design", caption: "Ripples: Lighting Exhibit Design" },
+                { src: "/beyond/industrial-3.png", alt: "Allerpack travel kit for food allergies", caption: "Allerpack: A travel kit for food allergies" },
+                { src: "/beyond/industrial-4.png", alt: "Green and Garnishes serving set", caption: "Green and Garnishes serving set: An all-inclusive salad bowl made for the Uncommon Goods brand catalog" },
+                { src: "/beyond/industrial-5.png", alt: "Globetrotter game for kids", caption: "Globetrotter: An imaginative game for kids to promote story-telling and problem-solving" },
+                { src: "/beyond/industrial-6.png", alt: "Lemon squeezer design", caption: "Lemon Squeezer design: A lemon squeezing mechanism designed to minimize mess" },
+                { src: "/beyond/industrial-7a.png", alt: "Hairdryer design", caption: "Hairdryer Design: A scaled hairdryer designed with the internal components of a real hairdryer" },
+                { src: "/beyond/industrial-7b.png", alt: "Wanderlust piggy bank", caption: "Wanderlust Bank: A piggy bank for kids designed to evoke the thrill of vacations" },
+              ].map(({ src, alt, caption }) => (
+                <div key={src}>
+                  <div style={{ height: "320px", overflow: "hidden" }}>
+                    <Image
+                      src={src}
+                      alt={alt}
+                      width={800}
+                      height={600}
+                      style={{ display: "block", width: "100%", height: "100%", objectFit: "cover" }}
+                    />
+                  </div>
+                  <p
+                    style={{
+                      fontFamily: "'Nunito', sans-serif",
+                      fontWeight: 400,
+                      fontSize: "14px",
+                      color: "#275F55",
+                      marginTop: "12px",
+                      lineHeight: 1.4,
+                    }}
+                  >
+                    {caption}
+                  </p>
+                </div>
+              ))}
             </div>
           </div>
 
@@ -277,28 +306,49 @@ export default function About() {
               I love tinkering with new tools and mediums that feed my creativity.
             </p>
 
-            {/* Masonry via CSS columns */}
-            <div style={{ columns: 3, columnGap: "20px", marginTop: "24px" }}>
+            {/* 2-column grid */}
+            <div
+              style={{
+                display: "grid",
+                gridTemplateColumns: "1fr 1fr",
+                gap: "40px",
+                marginTop: "24px",
+              }}
+            >
               {[
-                { n: 1, w: 1064, h: 1654 },
-                { n: 2, w: 1064, h: 1154 },
-                { n: 3, w: 1054, h: 838 },
-                { n: 4, w: 1030, h: 1534 },
-                { n: 5, w: 1056, h: 1426 },
-                { n: 6, w: 1046, h: 748 },
-                { n: 7, w: 1042, h: 1650 },
-                { n: 8, w: 1064, h: 962 },
-                { n: 9, w: 1068, h: 942 },
-                { n: 10, w: 1084, h: 1450 },
-              ].map(({ n, w, h }) => (
-                <div key={n} style={{ breakInside: "avoid", marginBottom: "20px" }}>
-                  <Image
-                    src={`/beyond/creative-${n}.png`}
-                    alt={`Creative ${n}`}
-                    width={w}
-                    height={h}
-                    style={{ display: "block", width: "100%", height: "auto" }}
-                  />
+                { n: 1, alt: "Pop up coffee house poster", caption: "Pop up coffee house invite: A poster designed to spread awareness for National Curry week" },
+                { n: 2, alt: "Pop up christmas card", caption: "Pop up christmas card" },
+                { n: 3, alt: "Rikshaw car concept sketch", caption: "Digital sketch: Rikshaw car concept" },
+                { n: 4, alt: "Mushroom observation sketches", caption: "Observation sketches of mushrooms at the Brooklyn botanical garden" },
+                { n: 5, alt: "Museum of natural history sketches", caption: "Observation sketches at the Museum of natural history" },
+                { n: 6, alt: "Paper planar study", caption: "Paper planar study: A 3D study using a 2D paper to explore 3D principles" },
+                { n: 7, alt: "Convexity study sculpture", caption: "Convexity study: Exploring 3D form through hierarchy, gesture, movement and visual interest using positive and negative spaces" },
+                { n: 8, alt: "Rectilinear study", caption: "Rectilinear study: a rectilinear form that has spacial tension and movement using proportionally diverse components." },
+                { n: 9, alt: "Teapot abstraction", caption: "Teapot abstraction: Depicting the concept of a tea party using 3D principles on CAD" },
+                { n: 10, alt: "Wooden photo frame", caption: "Wooden photo frame" },
+              ].map(({ n, alt, caption }) => (
+                <div key={n}>
+                  <div style={{ height: "320px", overflow: "hidden" }}>
+                    <Image
+                      src={`/beyond/creative-${n}.png`}
+                      alt={alt}
+                      width={800}
+                      height={600}
+                      style={{ display: "block", width: "100%", height: "100%", objectFit: "cover" }}
+                    />
+                  </div>
+                  <p
+                    style={{
+                      fontFamily: "'Nunito', sans-serif",
+                      fontWeight: 400,
+                      fontSize: "14px",
+                      color: "#275F55",
+                      marginTop: "12px",
+                      lineHeight: 1.4,
+                    }}
+                  >
+                    {caption}
+                  </p>
                 </div>
               ))}
             </div>

@@ -241,7 +241,7 @@ export default function Philips() {
             width: "100%",
             aspectRatio: "3024 / 4032",
             maxHeight: "640px",
-            borderRadius: "16px",
+            borderRadius: "4px",
             overflow: "hidden",
             marginTop: "40px",
           }}
@@ -627,7 +627,7 @@ export default function Philips() {
           </h3>
 
           <div style={{ marginBottom: "32px" }}>
-            <div style={{ position: "relative", borderRadius: "8px", overflow: "hidden" }}>
+            <div style={{ position: "relative", borderRadius: "4px", overflow: "hidden" }}>
               <Image
                 src="/projects/philips/interview-insights.png"
                 alt="User and expert interview insights"
@@ -640,7 +640,7 @@ export default function Philips() {
           </div>
 
           <div style={{ marginBottom: "32px" }}>
-            <div style={{ position: "relative", borderRadius: "8px", overflow: "hidden" }}>
+            <div style={{ position: "relative", borderRadius: "4px", overflow: "hidden" }}>
               <Image
                 src="/projects/philips/competitive-analysis.png"
                 alt="Competitive analysis"
@@ -670,7 +670,7 @@ export default function Philips() {
 
           <div style={{ marginBottom: "32px" }}>
             <div style={{ display: "flex", gap: "16px" }}>
-              <div style={{ flex: 1, position: "relative", aspectRatio: "457/609", borderRadius: "8px", overflow: "hidden" }}>
+              <div style={{ flex: 1, position: "relative", aspectRatio: "457/609", borderRadius: "4px", overflow: "hidden" }}>
                 <Image
                   src="/projects/philips/usability-1.png"
                   alt="Usability testing with phantom belly, image 1"
@@ -678,7 +678,7 @@ export default function Philips() {
                   className="object-cover"
                 />
               </div>
-              <div style={{ flex: 1, position: "relative", aspectRatio: "456/609", borderRadius: "8px", overflow: "hidden" }}>
+              <div style={{ flex: 1, position: "relative", aspectRatio: "456/609", borderRadius: "4px", overflow: "hidden" }}>
                 <Image
                   src="/projects/philips/usability-2.png"
                   alt="Usability testing with phantom belly, image 2"
@@ -686,7 +686,7 @@ export default function Philips() {
                   className="object-cover"
                 />
               </div>
-              <div style={{ flex: 1, position: "relative", aspectRatio: "457/609", borderRadius: "8px", overflow: "hidden" }}>
+              <div style={{ flex: 1, position: "relative", aspectRatio: "457/609", borderRadius: "4px", overflow: "hidden" }}>
                 <Image
                   src="/projects/philips/usability-3.png"
                   alt="Usability testing with phantom belly, image 3"
@@ -699,7 +699,7 @@ export default function Philips() {
           </div>
 
           <div style={{ marginBottom: "32px" }}>
-            <div style={{ position: "relative", borderRadius: "8px", overflow: "hidden" }}>
+            <div style={{ position: "relative", borderRadius: "4px", overflow: "hidden" }}>
               <Image
                 src="/projects/philips/usability-testing-template.png"
                 alt="Usability testing template for the screens in the flow"
@@ -724,7 +724,7 @@ export default function Philips() {
           </h3>
 
           <div style={{ marginBottom: "32px" }}>
-            <div style={{ position: "relative", borderRadius: "8px", overflow: "hidden" }}>
+            <div style={{ position: "relative", borderRadius: "4px", overflow: "hidden" }}>
               <Image
                 src="/projects/philips/service-blueprint.png"
                 alt="Service blueprint activity"
@@ -737,7 +737,7 @@ export default function Philips() {
           </div>
 
           <div style={{ marginBottom: "32px" }}>
-            <div style={{ position: "relative", borderRadius: "8px", overflow: "hidden", maxWidth: "974px" }}>
+            <div style={{ position: "relative", borderRadius: "4px", overflow: "hidden", maxWidth: "974px" }}>
               <Image
                 src="/projects/philips/core-values-workshop.png"
                 alt="Transformative quality workshop"
@@ -809,7 +809,7 @@ export default function Philips() {
               abdomen to automatically collect the necessary parameters.
             </p>
             <div style={{ marginBottom: "40px" }}>
-              <div style={{ position: "relative", borderRadius: "8px", overflow: "hidden" }}>
+              <div style={{ position: "relative", borderRadius: "4px", overflow: "hidden" }}>
                 <Image
                   src="/projects/philips/blind-sweep-3x3.png"
                   alt="3x3 sweep pattern for blind sweep screening"
@@ -821,7 +821,7 @@ export default function Philips() {
               <Caption>3X3 sweep for the first trimester</Caption>
             </div>
             <div style={{ marginBottom: "24px" }}>
-              <div style={{ position: "relative", borderRadius: "8px", overflow: "hidden" }}>
+              <div style={{ position: "relative", borderRadius: "4px", overflow: "hidden" }}>
                 <Image
                   src="/projects/philips/blind-sweep-5x5.png"
                   alt="5x5 sweep pattern for blind sweep screening"
@@ -836,7 +836,7 @@ export default function Philips() {
               </Caption>
             </div>
             <div>
-              <div style={{ position: "relative", borderRadius: "8px", overflow: "hidden" }}>
+              <div style={{ position: "relative", borderRadius: "4px", overflow: "hidden" }}>
                 <Image
                   src="/projects/philips/blind-sweep-report.png"
                   alt="Reporting summary for blind sweep"
@@ -870,7 +870,7 @@ export default function Philips() {
               (Obstetricians/Radiologists) for faster, AI-supported reporting
             </p>
             <div style={{ marginBottom: "24px" }}>
-              <div style={{ position: "relative", borderRadius: "8px", overflow: "hidden" }}>
+              <div style={{ position: "relative", borderRadius: "4px", overflow: "hidden" }}>
                 <Image
                   src="/projects/philips/guided-sweep-1.png"
                   alt="Manual screening supported with AI-enabled reporting"
@@ -882,7 +882,7 @@ export default function Philips() {
               <Caption>Manual screening supported with AI-enabled reporting</Caption>
             </div>
             <div>
-              <div style={{ position: "relative", borderRadius: "8px", overflow: "hidden" }}>
+              <div style={{ position: "relative", borderRadius: "4px", overflow: "hidden" }}>
                 <Image
                   src="/projects/philips/guided-sweep-report.png"
                   alt="Reporting summary for guided sweep for detailed analysis"
@@ -941,7 +941,7 @@ export default function Philips() {
               to carry all items across facilities.
             </p>
           </div>
-          <div style={{ position: "relative", borderRadius: "8px", overflow: "hidden", marginBottom: "80px" }}>
+          <div style={{ position: "relative", borderRadius: "4px", overflow: "hidden", marginBottom: "80px" }}>
             <Image
               src="/projects/philips/physical-equipment.png"
               alt="Physical equipment: tablet, probe, and modular cart"
@@ -1002,7 +1002,7 @@ export default function Philips() {
             </div>
 
             <div style={{ marginBottom: "32px" }}>
-              <div style={{ position: "relative", borderRadius: "8px", overflow: "hidden" }}>
+              <div style={{ position: "relative", borderRadius: "4px", overflow: "hidden" }}>
                 <Image
                   src="/projects/philips/india-current-journey.png"
                   alt="India current state pregnancy journey"
@@ -1017,7 +1017,7 @@ export default function Philips() {
             </div>
 
             <div>
-              <div style={{ position: "relative", borderRadius: "8px", overflow: "hidden" }}>
+              <div style={{ position: "relative", borderRadius: "4px", overflow: "hidden" }}>
                 <Image
                   src="/projects/philips/india-future-journey.png"
                   alt="India future state pregnancy journey"
@@ -1058,7 +1058,7 @@ export default function Philips() {
             </div>
 
             <div style={{ marginBottom: "32px" }}>
-              <div style={{ position: "relative", borderRadius: "8px", overflow: "hidden" }}>
+              <div style={{ position: "relative", borderRadius: "4px", overflow: "hidden" }}>
                 <Image
                   src="/projects/philips/kenya-current-journey.png"
                   alt="Kenya current state pregnancy journey"
@@ -1073,7 +1073,7 @@ export default function Philips() {
             </div>
 
             <div>
-              <div style={{ position: "relative", borderRadius: "8px", overflow: "hidden" }}>
+              <div style={{ position: "relative", borderRadius: "4px", overflow: "hidden" }}>
                 <Image
                   src="/projects/philips/kenya-future-journey.png"
                   alt="Kenya future state pregnancy journey"

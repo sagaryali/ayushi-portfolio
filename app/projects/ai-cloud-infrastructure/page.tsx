@@ -184,7 +184,7 @@ export default function AiCloudInfrastructure() {
             position: "relative",
             width: "100%",
             aspectRatio: "1451 / 967",
-            borderRadius: "16px",
+            borderRadius: "4px",
             overflow: "hidden",
             marginTop: "40px",
           }}
@@ -320,7 +320,7 @@ export default function AiCloudInfrastructure() {
               className="font-avenir"
               style={{ fontSize: "17px", fontWeight: 400, lineHeight: 1.75 }}
             >
-              We are designing systems and products for a global technology
+              Designing systems and products for a global technology
               company that plans and delivers AI &amp; Cloud capacity.
             </p>
           </div>
@@ -353,8 +353,8 @@ export default function AiCloudInfrastructure() {
               className="font-avenir"
               style={{ fontSize: "17px", fontWeight: 400, lineHeight: 1.75 }}
             >
-              The challenge extended beyond just operational complexity, to
-              helping Capacity Planners and Sales teams to work effectively
+              The challenge extends beyond just operational complexity, to
+              helping Capacity Planners and Sales teams work effectively
               across interconnected systems and teams, and enabling them to make
               high-impact decisions with confidence.
             </p>
@@ -377,7 +377,7 @@ export default function AiCloudInfrastructure() {
                 marginBottom: "16px",
               }}
             >
-              The initial MVP established a scalable foundation to enhance
+              The initial MVP establishes a scalable foundation to enhance
               planning efficiency and decision quality across planning, sales,
               and customer interfaces, delivering measurable impact including:
             </p>
@@ -392,14 +392,14 @@ export default function AiCloudInfrastructure() {
               }}
             >
               <li>
-                Reduced planning time per customer from ~10 minutes to ~2 minutes
+                Reducing planning time per customer from ~10 minutes to ~2 minutes
               </li>
               <li>
-                Unified five fragmented dashboards and spreadsheets into a single
+                Unifying five fragmented dashboards and spreadsheets into a single
                 planning experience
               </li>
               <li>
-                Reduced operational risk by centralizing data and minimizing
+                Reducing operational risk by centralizing data and minimizing
                 manual handoffs
               </li>
             </ol>
@@ -418,7 +418,7 @@ export default function AiCloudInfrastructure() {
               style={{ fontSize: "17px", fontWeight: 400, lineHeight: 1.75 }}
             >
               As part of a broader effort to support Planners, sales teams, and
-              customers, I led design for the planner-facing workflows, focused
+              customers, I lead design for the Planner-facing workflows, focused
               on planning and delivery.
             </p>
           </div>
@@ -995,7 +995,7 @@ export default function AiCloudInfrastructure() {
                 style={{
                   width: "100%",
                   height: "auto",
-                  borderRadius: "8px",
+                  borderRadius: "4px",
                 }}
               />
             </div>
@@ -1075,7 +1075,7 @@ export default function AiCloudInfrastructure() {
                 style={{
                   width: "100%",
                   height: "auto",
-                  borderRadius: "8px",
+                  borderRadius: "4px",
                 }}
               />
             </div>
@@ -1149,7 +1149,7 @@ export default function AiCloudInfrastructure() {
                 style={{
                   width: "100%",
                   height: "auto",
-                  borderRadius: "8px",
+                  borderRadius: "4px",
                 }}
               />
             </div>

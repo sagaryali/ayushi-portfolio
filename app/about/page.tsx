@@ -81,7 +81,7 @@ export default function About() {
               width={360}
               height={480}
               className="object-cover"
-              style={{ borderRadius: "0", width: "100%", height: "auto" }}
+              style={{ borderRadius: "4px", width: "100%", height: "auto" }}
             />
           </div>
 

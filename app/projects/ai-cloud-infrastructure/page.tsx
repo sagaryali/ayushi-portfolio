@@ -129,15 +129,15 @@ const designPlan = {
 const userImpact = [
   {
     num: 1,
-    title: "Increased efficiency",
+    title: "Increasing efficiency",
     description:
       "Reduced planner time per customer from ~10 to ~2 minutes",
     quote:
-      '"It\'s helpful being able to edit in the views and it updates. Because then I don\'t have to go into the details until we\'re going close to delivery."',
+      '"It\'s helpful being able to edit in the views and it updates all the data. Because then I don\'t have to go into the details until we\'re going close to delivery."',
   },
   {
     num: 2,
-    title: "Consolidated Workflows",
+    title: "Consolidating Workflows",
     description:
       "Consolidated workflows from 5 dashboards & spreadsheets into 1 product",
     quote:
@@ -145,7 +145,7 @@ const userImpact = [
   },
   {
     num: 3,
-    title: "Reduced errors",
+    title: "Reducing errors",
     description:
       "Caught ~80% of errors early through planning-stage validation",
     quote:
@@ -156,18 +156,18 @@ const userImpact = [
 const businessImpact = [
   {
     num: 1,
-    title: "Improved customer relations",
+    title: "Improving customer relations",
     description: "Better communication, collaboration with customers",
   },
   {
     num: 2,
-    title: "Consolidated Workflows",
+    title: "Consolidating Workflows",
     description:
       "Deliveries supported with necessary infrastructure",
   },
   {
     num: 3,
-    title: "Higher fulfillment rates",
+    title: "Increasing fulfillment rates",
     description:
       "Increasing fulfillment efficiency minimizes idle capacity, directly recovering $3.50 per chip per hour in lost revenue",
   },
@@ -941,7 +941,7 @@ export default function AiCloudInfrastructure() {
                 marginBottom: "24px",
               }}
             >
-              Solution 1: Unified dashboards for Supply and Usage evaluation
+              Solution 1: Unified dashboards for supply, demand, and status evaluation
             </h3>
             <div
               className="font-avenir"
@@ -964,13 +964,13 @@ export default function AiCloudInfrastructure() {
                 <strong>
                   track milestone readiness leading up to delivery
                 </strong>
-                , instead of guessing fulfillment timelines, which is{" "}
+                , instead of guessing readiness and fulfillment timelines, which is{" "}
                 <strong>improving my ability to deliver on time</strong>.
               </p>
               <p>
                 I am able to{" "}
                 <strong>
-                  prioritize capacity based on high-level business impact
+                  prioritize capacity requests based on customer need and business impact
                 </strong>
                 , instead of reactive fire-fighting, which is{" "}
                 <strong>
@@ -1124,13 +1124,9 @@ export default function AiCloudInfrastructure() {
               <p>
                 As a planner, I am able to{" "}
                 <strong>
-                  automate delivery workflows following key decisions
+                  evaluate overall profitability, business impact, and customer satisfaction
                 </strong>
-                , instead of relying on manual intervention, which is{" "}
-                <strong>
-                  improving my efficiency in fulfilling requests
-                </strong>
-                .
+                , ensuring that chips do not sit idle.
               </p>
             </div>
             <div style={{ position: "relative", marginBottom: "8px" }}>

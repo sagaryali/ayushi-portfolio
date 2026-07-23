@@ -96,7 +96,7 @@ const designPlan = {
     {
       title: "Engage",
       subtitle:
-        "Build relationships with users and stakeholders, involve them in the process",
+        "Build relationships with users and stakeholders, involving them in the process",
       items: [
         "Host co-create workshops with users",
         "Show continuous progress for feedback",
@@ -106,7 +106,7 @@ const designPlan = {
     {
       title: "Understand",
       subtitle:
-        "Observe our users in their current workflows and mindsets",
+        "Observe our users in their current workflows and thought processes",
       items: [
         "Mirror behaviors and mental models in new workflows",
         "Research plan to study behavior and trust in adoption",

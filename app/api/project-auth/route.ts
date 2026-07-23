@@ -1,6 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-
-const PASSWORD = "mydesignprojects";
+import { PASSWORD } from "../../../lib/password";
 
 export async function POST(request: NextRequest) {
   const { password } = await request.json();
@@ -10,7 +9,7 @@ export async function POST(request: NextRequest) {
   }
 
   const res = NextResponse.json({ ok: true });
-  res.cookies.set("project_auth", "granted", {
+  res.cookies.set("project_auth", PASSWORD, {
     httpOnly: true,
     sameSite: "lax",
     path: "/",

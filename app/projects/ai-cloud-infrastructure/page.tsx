@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import Nav from "../../components/Nav";
 import Footer from "../../components/Footer";
 import Image from "next/image";
@@ -84,10 +85,10 @@ const currentState = [
 ];
 
 const futureState = [
-  "A unified planning experience that brings together supply, demand, and delivery tracking into end-to-end workflows.",
+  "A unified planning experience that provides visibility into supply, demand, and delivery statuses into end-to-end workflows.",
   "High-confidence insights into customer needs, business priorities, and delivery feasibility to support informed decision-making.",
-  "Streamlined cross-product collaboration through standardized processes and clearer communication across teams.",
-  "Services beyond planning and delivery, to streamline customer capacity usage.",
+  "Streamlined cross-product collaboration through standardized processes and formal communication channels across teams.",
+  "Services beyond planning and delivery, to provide a better customer experience. Visibility into fulfillment tracking to ensure blockers can be dealt with early on.",
 ];
 
 const designPlan = {
@@ -689,69 +690,61 @@ export default function AiCloudInfrastructure() {
           {/* Current vs Future State Table */}
           <div
             style={{
-              display: "flex",
-              gap: "48px",
+              display: "grid",
+              gridTemplateColumns: "1fr 1fr",
+              columnGap: "48px",
+              rowGap: "16px",
               marginBottom: "64px",
             }}
           >
-            <div style={{ flex: 1 }}>
-              <p
-                className="font-avenir"
-                style={{
-                  fontSize: "17px",
-                  fontWeight: 800,
-                  paddingBottom: "16px",
-                  borderBottom: "1px solid #275F55",
-                  marginBottom: "24px",
-                }}
-              >
-                Current State
-              </p>
-              <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-                {currentState.map((item, i) => (
-                  <p
-                    key={i}
-                    className="font-avenir"
-                    style={{
-                      fontSize: "15px",
-                      fontWeight: 400,
-                      lineHeight: 1.7,
-                    }}
-                  >
-                    {item}
-                  </p>
-                ))}
-              </div>
-            </div>
-            <div style={{ flex: 1 }}>
-              <p
-                className="font-avenir"
-                style={{
-                  fontSize: "17px",
-                  fontWeight: 800,
-                  paddingBottom: "16px",
-                  borderBottom: "1px solid #275F55",
-                  marginBottom: "24px",
-                }}
-              >
-                Future State
-              </p>
-              <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-                {futureState.map((item, i) => (
-                  <p
-                    key={i}
-                    className="font-avenir"
-                    style={{
-                      fontSize: "15px",
-                      fontWeight: 400,
-                      lineHeight: 1.7,
-                    }}
-                  >
-                    {item}
-                  </p>
-                ))}
-              </div>
-            </div>
+            <p
+              className="font-avenir"
+              style={{
+                fontSize: "17px",
+                fontWeight: 800,
+                paddingBottom: "16px",
+                borderBottom: "1px solid #275F55",
+                marginBottom: "8px",
+              }}
+            >
+              Current State
+            </p>
+            <p
+              className="font-avenir"
+              style={{
+                fontSize: "17px",
+                fontWeight: 800,
+                paddingBottom: "16px",
+                borderBottom: "1px solid #275F55",
+                marginBottom: "8px",
+              }}
+            >
+              Future State
+            </p>
+            {currentState.map((item, i) => (
+              <Fragment key={i}>
+                <p
+                  className="font-avenir"
+                  style={{
+                    fontSize: "15px",
+                    fontWeight: 400,
+                    lineHeight: 1.7,
+                  }}
+                >
+                  {item}
+                </p>
+                <p
+                  className="font-avenir"
+                  style={{
+                    fontSize: "15px",
+                    fontWeight: 400,
+                    lineHeight: 1.7,
+                  }}
+                >
+                  {futureState[i]}
+                </p>
+              </Fragment>
+            ))}
           </div>
 
           {/* Competitors: Spreadsheets */}

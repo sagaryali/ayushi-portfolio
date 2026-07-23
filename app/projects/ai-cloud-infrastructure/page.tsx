@@ -56,11 +56,11 @@ const journeySteps = [
   },
   {
     step: 4,
-    title: "Planner ensure delivery to the customer and fix any blockers in the process",
+    title: "Planners schedule ramped delivery to the customer and fix any blockers in the process",
     description:
-      "Once the delivery is confirmed to the customer, the Planners track the delivery and ensure that blockers (if any) are flagged to the right team members.",
+      "Once the delivery is confirmed to the customer, the Planners create a delivery plan and ensure that blockers (if any) are flagged to the right team members.",
     userNeed:
-      "Visibility into delivery phases, timelines and alerts of any blockers",
+      "Ability to establish delivery plans as per user needs. Visibility into delivery phases, timelines and alerts of any blockers",
     customerNeed:
       "Point of contact to address blockers, communication for any changes in delivery plan",
   },
@@ -70,7 +70,7 @@ const journeySteps = [
     description:
       "After initial delivery, Planners continue to address needs of the customer such as reducing/increasing the capacity amounts, adding infrastructure, changing the end dates, etc.",
     userNeed:
-      "Strategic insights into the delivery evolution over time for highest business impact",
+      "Strategic insights into the delivery evolution over time for highest customer satisfaction and business impact",
     customerNeed:
       "Continuous services, ability to change reservation as per evolving needs",
   },

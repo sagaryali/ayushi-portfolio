@@ -49,10 +49,10 @@ const journeySteps = [
     step: 3,
     title: "Planners block the supply for the customer",
     description:
-      "Once the Customer and Planners reach an agreement, the supply is blocked off so that it is not available for any other customer. However, at this stage, Planners can still choose to change the amount, dates, or product for a more high-priority need.",
+      "Once the Customer and Planners reach an agreement, the supply is blocked off so that it is not available for any other customer. However, as we get closer to the delivery date, the amount, dates, or products can still be changed based on availability, priority, and more.",
     userNeed:
-      "Ability to 'tetris' requests against available supply for the most profitable match",
-    customerNeed: "Constant transparency about request status",
+      "Ability to 'tetris' requests for the most beneficial match, tracking of capacity readiness closer to delivery",
+    customerNeed: "Constant transparency about request status, clear communication about action items",
   },
   {
     step: 4,

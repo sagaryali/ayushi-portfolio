@@ -307,7 +307,7 @@ export default function Philips() {
                 className="font-avenir"
                 style={{ fontSize: "15px", fontWeight: 500, marginTop: "4px" }}
               >
-                August 2022 &ndash; July 2023
+                July 2022 &ndash; July 2023
               </p>
             </div>
             <div>
@@ -389,7 +389,7 @@ export default function Philips() {
                 marginBottom: "16px",
               }}
             >
-              This project was part of a collaboration between{" "}
+              This project was a collaboration between{" "}
               <a
                 href="https://www.usa.philips.com/healthcare"
                 target="_blank"
@@ -408,10 +408,11 @@ export default function Philips() {
                 The Gates Foundation
               </a>{" "}
               to develop an AI-enabled solution around Philips&rsquo; existing
-              handheld ultrasound technology. The goal was to enable frontline
-              healthcare workers to identify high-risk pregnancies earlier and
-              improve access to antenatal care in underserved regions in India
-              and Kenya.
+              handheld ultrasound technology. The goal was to improve access
+              to antenatal care in underserved regions in India and Kenya by
+              enabling frontline healthcare workers to identify high-risk
+              pregnancies early to ensure patients can have a planned
+              pregnancy and delivery.
             </p>
             <p
               className="font-avenir"
@@ -556,11 +557,23 @@ export default function Philips() {
                   style={{
                     fontSize: "17px",
                     fontWeight: 800,
-                    marginBottom: "24px",
+                    marginBottom: "0",
                   }}
                 >
                   {col.title}
                 </p>
+                <svg
+                  width="100%"
+                  height="32"
+                  viewBox="0 0 100 32"
+                  preserveAspectRatio="none"
+                  style={{ display: "block" }}
+                >
+                  <line x1="50" y1="0" x2="50" y2="16" stroke="#275F55" strokeWidth="1" vectorEffect="non-scaling-stroke" />
+                  <line x1="25" y1="16" x2="75" y2="16" stroke="#275F55" strokeWidth="1" vectorEffect="non-scaling-stroke" />
+                  <line x1="25" y1="16" x2="25" y2="32" stroke="#275F55" strokeWidth="1" vectorEffect="non-scaling-stroke" />
+                  <line x1="75" y1="16" x2="75" y2="32" stroke="#275F55" strokeWidth="1" vectorEffect="non-scaling-stroke" />
+                </svg>
                 <div style={{ display: "flex", gap: "16px" }}>
                   {col.items.map((item, i) => (
                     <p
@@ -682,7 +695,7 @@ export default function Philips() {
                 />
               </div>
             </div>
-            <Caption>Usability testing of technology using a phantom belly</Caption>
+            <Caption>Usability testing of the technology using a phantom belly</Caption>
           </div>
 
           <div style={{ marginBottom: "32px" }}>
@@ -695,7 +708,7 @@ export default function Philips() {
                 style={{ width: "100%", height: "auto" }}
               />
             </div>
-            <Caption>Usability testing for the screens in the flow</Caption>
+            <Caption>User testing each screen in the flow</Caption>
           </div>
 
           <InsightSolution items={validationInsights} />
@@ -720,7 +733,7 @@ export default function Philips() {
                 style={{ width: "100%", height: "auto" }}
               />
             </div>
-            <Caption>Service Blueprint activity</Caption>
+            <Caption>Service Blueprint activity to map out the service before and after screening</Caption>
           </div>
 
           <div style={{ marginBottom: "32px" }}>
@@ -762,10 +775,9 @@ export default function Philips() {
               marginBottom: "64px",
             }}
           >
-            A key outcome of my time at Philips Healthcare was partnering
-            cross-functionally to define the product&rsquo;s value
-            proposition and design the end-to-end patient journey for our
-            healthcare facility partners:
+            The outcome had 3 main parts to it, namely the digital product
+            that would live on a compact tablet, the physical equipment to
+            accompany, and lastly the end-to-end service offerings.
           </p>
 
           {/* Digital Product */}
@@ -796,19 +808,31 @@ export default function Philips() {
               conduct horizontal and vertical sweeps across the patient&rsquo;s
               abdomen to automatically collect the necessary parameters.
             </p>
+            <div style={{ marginBottom: "40px" }}>
+              <div style={{ position: "relative", borderRadius: "8px", overflow: "hidden" }}>
+                <Image
+                  src="/projects/philips/blind-sweep-3x3.png"
+                  alt="3x3 sweep pattern for blind sweep screening"
+                  width={1528}
+                  height={619}
+                  style={{ width: "100%", height: "auto" }}
+                />
+              </div>
+              <Caption>3X3 sweep for the first trimester</Caption>
+            </div>
             <div style={{ marginBottom: "24px" }}>
               <div style={{ position: "relative", borderRadius: "8px", overflow: "hidden" }}>
                 <Image
-                  src="/projects/philips/blind-sweep-1.png"
-                  alt="3x3 and 5x5 sweep patterns for blind sweep screening"
-                  width={1732}
-                  height={1616}
+                  src="/projects/philips/blind-sweep-5x5.png"
+                  alt="5x5 sweep pattern for blind sweep screening"
+                  width={1528}
+                  height={620}
                   style={{ width: "100%", height: "auto" }}
                 />
               </div>
               <Caption>
-                3X3 sweep for the first part of a woman&rsquo;s pregnancy,
-                5X5 sweep for the second part to cover more area
+                5X5 sweep for the second and third trimesters to cover more
+                surface area
               </Caption>
             </div>
             <div>
@@ -816,8 +840,8 @@ export default function Philips() {
                 <Image
                   src="/projects/philips/blind-sweep-report.png"
                   alt="Reporting summary for blind sweep"
-                  width={1812}
-                  height={710}
+                  width={1759}
+                  height={541}
                   style={{ width: "100%", height: "auto" }}
                 />
               </div>
@@ -850,8 +874,8 @@ export default function Philips() {
                 <Image
                   src="/projects/philips/guided-sweep-1.png"
                   alt="Manual screening supported with AI-enabled reporting"
-                  width={1658}
-                  height={1326}
+                  width={880}
+                  height={1134}
                   style={{ width: "100%", height: "auto" }}
                 />
               </div>
@@ -862,8 +886,8 @@ export default function Philips() {
                 <Image
                   src="/projects/philips/guided-sweep-report.png"
                   alt="Reporting summary for guided sweep for detailed analysis"
-                  width={1084}
-                  height={1066}
+                  width={967}
+                  height={922}
                   style={{ width: "100%", height: "auto" }}
                 />
               </div>

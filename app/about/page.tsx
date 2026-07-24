@@ -24,41 +24,6 @@ export default function About() {
           transform: translateZ(60px) scale(1.06);
           box-shadow: 0 22px 32px rgba(0,0,0,0.22);
         }
-        .beyond-tooltip {
-          position: absolute;
-          bottom: calc(100% + 14px);
-          left: 50%;
-          background: #275F55;
-          color: #FDF6EC;
-          font-family: 'Nunito', sans-serif;
-          font-size: 13px;
-          font-weight: 600;
-          padding: 10px 16px;
-          border-radius: 16px;
-          width: max-content;
-          max-width: 260px;
-          text-align: center;
-          line-height: 1.4;
-          pointer-events: none;
-          opacity: 0;
-          transition: opacity 0.2s ease, transform 0.2s ease;
-          transform: translateX(-50%) translateY(4px);
-          letter-spacing: 0.01em;
-          z-index: 10;
-        }
-        .beyond-tooltip::after {
-          content: '';
-          position: absolute;
-          top: 100%;
-          left: 50%;
-          transform: translateX(-50%);
-          border: 6px solid transparent;
-          border-top-color: #275F55;
-        }
-        .beyond-item:hover .beyond-tooltip {
-          opacity: 1;
-          transform: translateX(-50%) translateY(0);
-        }
       `}</style>
 
       <Nav />
@@ -192,9 +157,18 @@ export default function About() {
                   className="beyond-image"
                   style={{ width: "100%", height: "auto" }}
                 />
-                <div className="beyond-tooltip">
-                  Mentorship on &ldquo;Careers in Design&rdquo; at high schools
-                </div>
+                <p
+                  style={{
+                    fontFamily: "'Nunito', sans-serif",
+                    fontWeight: 400,
+                    fontSize: "14px",
+                    color: "#275F55",
+                    marginTop: "12px",
+                    lineHeight: 1.4,
+                  }}
+                >
+                  &ldquo;Careers in Design&rdquo; talk at high schools
+                </p>
               </div>
 
               {/* Image 2 */}
@@ -207,34 +181,54 @@ export default function About() {
                   className="beyond-image"
                   style={{ width: "100%", height: "auto" }}
                 />
-                <div className="beyond-tooltip">
+                <p
+                  style={{
+                    fontFamily: "'Nunito', sans-serif",
+                    fontWeight: 400,
+                    fontSize: "14px",
+                    color: "#275F55",
+                    marginTop: "12px",
+                    lineHeight: 1.4,
+                  }}
+                >
                   &ldquo;Intro to UX&rdquo; course at NYU
-                </div>
+                </p>
               </div>
 
               {/* Image 3 */}
               <div className="beyond-item" style={{ breakInside: "avoid", marginBottom: "16px" }}>
                 <Image
                   src="/beyond/mentor-3.png"
-                  alt="Industry Panels"
+                  alt="Design panels to address the future of design"
                   width={1408}
                   height={1056}
                   className="beyond-image"
                   style={{ width: "100%", height: "auto" }}
                 />
-                <div className="beyond-tooltip">Industry Panels</div>
               </div>
 
-              {/* Image 4 — no caption */}
+              {/* Image 4 */}
               <div className="beyond-item" style={{ breakInside: "avoid", marginBottom: "16px" }}>
                 <Image
                   src="/beyond/mentor-4.png"
-                  alt=""
+                  alt="Design panels to address the future of design"
                   width={1406}
                   height={1056}
                   className="beyond-image"
                   style={{ width: "100%", height: "auto" }}
                 />
+                <p
+                  style={{
+                    fontFamily: "'Nunito', sans-serif",
+                    fontWeight: 400,
+                    fontSize: "14px",
+                    color: "#275F55",
+                    marginTop: "12px",
+                    lineHeight: 1.4,
+                  }}
+                >
+                  Design panels to address the future of design
+                </p>
               </div>
             </div>
           </div>
@@ -288,7 +282,18 @@ export default function About() {
                     className="beyond-image"
                     style={{ width: "100%", height: "auto" }}
                   />
-                  <div className="beyond-tooltip">{caption}</div>
+                  <p
+                    style={{
+                      fontFamily: "'Nunito', sans-serif",
+                      fontWeight: 400,
+                      fontSize: "14px",
+                      color: "#275F55",
+                      marginTop: "12px",
+                      lineHeight: 1.4,
+                    }}
+                  >
+                    {caption}
+                  </p>
                 </div>
               ))}
             </div>
@@ -344,7 +349,18 @@ export default function About() {
                     className="beyond-image"
                     style={{ width: "100%", height: "auto" }}
                   />
-                  <div className="beyond-tooltip">{caption}</div>
+                  <p
+                    style={{
+                      fontFamily: "'Nunito', sans-serif",
+                      fontWeight: 400,
+                      fontSize: "14px",
+                      color: "#275F55",
+                      marginTop: "12px",
+                      lineHeight: 1.4,
+                    }}
+                  >
+                    {caption}
+                  </p>
                 </div>
               ))}
             </div>

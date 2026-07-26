@@ -169,7 +169,7 @@ const businessImpact = [
     num: 3,
     title: "Increasing fulfillment rates",
     description:
-      "Increasing fulfillment efficiency minimizes idle capacity, directly recovering $3.50 per chip per hour in lost revenue",
+      "Increasing fulfillment efficiency minimizes idle capacity, directly recovering dollars per chip per hour in lost revenue",
   },
 ];
 
@@ -347,8 +347,7 @@ export default function AiCloudInfrastructure() {
               capacity, the company operates highly complex systems to forecast
               supply, allocate capacity, and deliver infrastructure at global
               scale. It is a high stakes environment where every idle capacity
-              translates directly to lost revenue at a rate of $3.5 per chip per
-              hour.
+              translates directly to lost revenue.
             </p>
             <p
               className="font-avenir"
@@ -1320,15 +1319,13 @@ export default function AiCloudInfrastructure() {
             }}
           >
             <li>
-              Communication across tools used by various stakeholders.
+              Established communication across stakeholders.
             </li>
             <li>
-              Systems that can help users evaluate impact and risk of their
-              decisions.
+              Helping users evaluate impact and risk of their decisions.
             </li>
             <li>
-              Added transparency in the state of capacity for more accurate
-              decision-making.
+              Added transparency for more accurate decision-making.
             </li>
           </ol>
         </section>

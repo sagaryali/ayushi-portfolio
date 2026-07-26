@@ -1,26 +1,19 @@
 export default function Footer() {
   return (
-    <footer style={{ backgroundColor: "#000", padding: "64px 0" }}>
+    <footer style={{ backgroundColor: "#000" }} className="py-10 md:py-16">
       <style>{`
         .footer-link:hover .footer-link-underline {
           text-decoration: underline;
         }
       `}</style>
       <div
-        style={{
-          maxWidth: "1120px",
-          margin: "0 auto",
-          padding: "0 48px",
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "flex-start",
-          gap: "64px",
-        }}
+        style={{ maxWidth: "1120px", margin: "0 auto" }}
+        className="px-6 md:px-12 flex flex-col md:flex-row md:justify-between items-start gap-8 md:gap-16"
       >
         {/* Left */}
         <p
-          className="font-avenir"
-          style={{ fontSize: "20px", fontWeight: 300, color: "#FDF6EC", lineHeight: 1.7, maxWidth: "360px" }}
+          className="font-avenir text-[16px] md:text-[20px] max-w-full md:max-w-[360px]"
+          style={{ fontWeight: 300, color: "#FDF6EC", lineHeight: 1.7 }}
         >
           This is only part of my story...
           <br /><br />
@@ -30,11 +23,11 @@ export default function Footer() {
         </p>
 
         {/* Right */}
-        <div style={{ display: "flex", flexDirection: "column", gap: "8px", textAlign: "right" }}>
+        <div className="flex flex-col gap-2 text-left md:text-right">
           <a
             href="mailto:ayushi0607@gmail.com"
-            className="font-avenir footer-link"
-            style={{ fontSize: "20px", fontWeight: 300, color: "#FDF6EC", textDecoration: "none" }}
+            className="font-avenir footer-link text-[16px] md:text-[20px]"
+            style={{ fontWeight: 300, color: "#FDF6EC", textDecoration: "none" }}
           >
             My Email: <span className="footer-link-underline">ayushi0607@gmail.com</span>
           </a>
@@ -42,14 +35,14 @@ export default function Footer() {
             href="https://www.linkedin.com/in/ayushi-shah0607/"
             target="_blank"
             rel="noopener noreferrer"
-            className="font-avenir footer-link"
-            style={{ fontSize: "20px", fontWeight: 300, color: "#FDF6EC", textDecoration: "none" }}
+            className="font-avenir footer-link text-[16px] md:text-[20px]"
+            style={{ fontWeight: 300, color: "#FDF6EC", textDecoration: "none" }}
           >
             My LinkedIn: <span className="footer-link-underline">ayushi-shah0607</span>
           </a>
           <p
-            className="font-avenir"
-            style={{ fontSize: "20px", fontWeight: 300, color: "#FDF6EC" }}
+            className="font-avenir text-[16px] md:text-[20px]"
+            style={{ fontWeight: 300, color: "#FDF6EC" }}
           >
             NYC-based Designer
           </p>

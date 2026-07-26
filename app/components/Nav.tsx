@@ -45,18 +45,18 @@ export default function Nav() {
           background-color: #275F55;
           color: #FDF6EC;
         }
+        @media (max-width: 767px) {
+          .nav-link {
+            padding: 8px 12px;
+            font-size: 14px !important;
+          }
+        }
       `}</style>
       <div
-        style={{
-          maxWidth: "1120px",
-          margin: "0 auto",
-          padding: "32px 48px",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "space-between",
-        }}
+        style={{ maxWidth: "1120px", margin: "0 auto" }}
+        className="px-4 py-5 md:px-12 md:py-8 flex items-center justify-between gap-3"
       >
-        <Link href="/" style={{ textDecoration: "none" }} className="logo-wrap">
+        <Link href="/" style={{ textDecoration: "none" }} className="logo-wrap shrink-0">
           <span className="font-merriweather font-bold text-black logo-short" style={{ fontSize: "22px", letterSpacing: "0.05em" }}>
             AS
           </span>
@@ -65,7 +65,7 @@ export default function Nav() {
           </span>
         </Link>
 
-        <ul style={{ display: "flex", gap: "16px", listStyle: "none", margin: 0, padding: 0 }}>
+        <ul className="flex flex-wrap justify-end gap-2 md:gap-4" style={{ listStyle: "none", margin: 0, padding: 0 }}>
           {links.map((link) => (
             <li key={link.href}>
               {link.external ? (

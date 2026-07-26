@@ -167,13 +167,8 @@ function DefinitionsBox({
 }) {
   return (
     <div
-      style={{
-        border: "2px solid #275F55",
-        borderRadius: "8px",
-        padding: "32px",
-        display: "flex",
-        gap: "64px",
-      }}
+      style={{ border: "2px solid #275F55", borderRadius: "8px" }}
+      className="p-5 md:p-8 flex flex-col md:flex-row gap-8 md:gap-16"
     >
       <div style={{ flex: 1 }}>
         <p
@@ -231,10 +226,17 @@ function Caption({ children }: { children: React.ReactNode }) {
 export default function Philips() {
   return (
     <div style={{ backgroundColor: "#FDF6EC", minHeight: "100vh" }}>
+      <style>{`
+        @media (max-width: 767px) {
+          h1.font-merriweather.font-bold { font-size: 32px !important; }
+          h2.font-merriweather.font-bold { font-size: 26px !important; }
+          h3.font-merriweather.font-bold { font-size: 22px !important; }
+        }
+      `}</style>
       <Nav />
 
       {/* Hero Image */}
-      <div style={{ maxWidth: "1120px", margin: "0 auto", padding: "0 48px" }}>
+      <div style={{ maxWidth: "1120px", margin: "0 auto" }} className="px-4 md:px-12">
         <div
           style={{
             position: "relative",
@@ -273,7 +275,7 @@ export default function Philips() {
       </div>
 
       {/* Title + Meta */}
-      <div style={{ maxWidth: "1120px", margin: "0 auto", padding: "0 48px" }}>
+      <div style={{ maxWidth: "1120px", margin: "0 auto" }} className="px-4 md:px-12">
         <section style={{ paddingTop: "48px" }}>
           <h1
             className="font-merriweather font-bold"
@@ -283,12 +285,8 @@ export default function Philips() {
           </h1>
 
           <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr 1fr 1.5fr",
-              gap: "40px",
-              marginTop: "48px",
-            }}
+            style={{ marginTop: "48px" }}
+            className="grid grid-cols-1 md:[grid-template-columns:1fr_1fr_1.5fr] gap-6 md:gap-10"
           >
             <div>
               <p
@@ -365,7 +363,7 @@ export default function Philips() {
           marginTop: "80px",
         }}
       >
-        <div style={{ maxWidth: "1120px", margin: "0 auto", padding: "0 48px" }}>
+        <div style={{ maxWidth: "1120px", margin: "0 auto" }} className="px-4 md:px-12">
           <h2
             className="font-merriweather font-bold"
             style={{ fontSize: "36px", marginBottom: "48px" }}
@@ -522,7 +520,7 @@ export default function Philips() {
         </div>
       </section>
 
-      <div style={{ maxWidth: "1120px", margin: "0 auto", padding: "0 48px" }}>
+      <div style={{ maxWidth: "1120px", margin: "0 auto" }} className="px-4 md:px-12">
         {/* Defining the scope */}
         <section style={{ paddingTop: "80px", paddingBottom: "80px" }}>
           <h2
@@ -549,7 +547,7 @@ export default function Philips() {
             with several questions in these 3 dimensions including:
           </p>
 
-          <div style={{ display: "flex", gap: "40px" }}>
+          <div className="flex flex-col md:flex-row gap-10 md:gap-10">
             {scopeQuestions.map((col) => (
               <div key={col.title} style={{ flex: 1, textAlign: "center" }}>
                 <p
@@ -567,14 +565,14 @@ export default function Philips() {
                   height="32"
                   viewBox="0 0 100 32"
                   preserveAspectRatio="none"
-                  style={{ display: "block" }}
+                  className="hidden md:block"
                 >
                   <line x1="50" y1="0" x2="50" y2="16" stroke="#275F55" strokeWidth="1" vectorEffect="non-scaling-stroke" />
                   <line x1="25" y1="16" x2="75" y2="16" stroke="#275F55" strokeWidth="1" vectorEffect="non-scaling-stroke" />
                   <line x1="25" y1="16" x2="25" y2="32" stroke="#275F55" strokeWidth="1" vectorEffect="non-scaling-stroke" />
                   <line x1="75" y1="16" x2="75" y2="32" stroke="#275F55" strokeWidth="1" vectorEffect="non-scaling-stroke" />
                 </svg>
-                <div style={{ display: "flex", gap: "16px" }}>
+                <div className="flex flex-col md:flex-row gap-3 md:gap-4 mt-3 md:mt-0">
                   {col.items.map((item, i) => (
                     <p
                       key={i}
@@ -669,7 +667,7 @@ export default function Philips() {
           </h3>
 
           <div style={{ marginBottom: "32px" }}>
-            <div style={{ display: "flex", gap: "16px" }}>
+            <div className="flex flex-col md:flex-row gap-4">
               <div style={{ flex: 1, position: "relative", aspectRatio: "457/609", borderRadius: "4px", overflow: "hidden" }}>
                 <Image
                   src="/projects/philips/usability-1.png"
@@ -754,7 +752,7 @@ export default function Philips() {
       </div>
 
       {/* Outcome */}
-      <div style={{ maxWidth: "1120px", margin: "0 auto", padding: "0 48px" }}>
+      <div style={{ maxWidth: "1120px", margin: "0 auto" }} className="px-4 md:px-12">
         <section style={{ paddingTop: "80px", paddingBottom: "80px" }}>
           <h2
             className="font-merriweather font-bold"
@@ -1116,7 +1114,7 @@ export default function Philips() {
             from users and stakeholders, including:
           </p>
 
-          <div style={{ display: "flex", gap: "24px" }}>
+          <div className="flex flex-col md:flex-row gap-6">
             {impactQuotes.map((item) => (
               <div
                 key={item.source}

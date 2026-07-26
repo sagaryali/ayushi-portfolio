@@ -35,6 +35,7 @@ export default function LoginPage() {
         justifyContent: "center",
         fontFamily: "'Nunito', sans-serif",
       }}
+      className="px-4"
     >
       <form
         onSubmit={handleSubmit}
@@ -42,7 +43,8 @@ export default function LoginPage() {
           display: "flex",
           flexDirection: "column",
           gap: "16px",
-          width: "320px",
+          width: "100%",
+          maxWidth: "320px",
         }}
       >
         <h1

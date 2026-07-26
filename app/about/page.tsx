@@ -28,18 +28,10 @@ export default function About() {
 
       <Nav />
 
-      <div style={{ maxWidth: "1120px", margin: "0 auto", padding: "0 48px" }}>
-        <section
-          style={{
-            paddingTop: "100px",
-            paddingBottom: "160px",
-            display: "flex",
-            gap: "80px",
-            alignItems: "flex-start",
-          }}
-        >
+      <div style={{ maxWidth: "1120px", margin: "0 auto" }} className="px-4 md:px-12">
+        <section className="pt-16 md:pt-[100px] pb-20 md:pb-[160px] flex flex-col md:flex-row gap-10 md:gap-20 items-start">
           {/* Left — photo */}
-          <div style={{ flexShrink: 0, width: "360px" }}>
+          <div className="w-full max-w-[360px] mx-auto md:mx-0 md:w-[360px] md:shrink-0">
             <Image
               src="/ayushi-about.png"
               alt="Ayushi"
@@ -108,8 +100,8 @@ export default function About() {
         <section style={{ paddingBottom: "120px" }}>
           {/* Page-level title */}
           <h2
-            className="font-merriweather font-bold"
-            style={{ fontSize: "48px", color: "#000" }}
+            className="font-merriweather font-bold text-[32px] md:text-[48px]"
+            style={{ color: "#000" }}
           >
             Beyond UX
           </h2>
@@ -118,8 +110,8 @@ export default function About() {
           <div style={{ marginTop: "32px" }}>
             {/* Section subtitle */}
             <h3
-              className="font-merriweather font-bold"
-              style={{ fontSize: "36px", color: "#000" }}
+              className="font-merriweather font-bold text-[26px] md:text-[36px]"
+              style={{ color: "#000" }}
             >
               Mentor / Teacher
             </h3>
@@ -140,13 +132,7 @@ export default function About() {
             </p>
 
             {/* Brick grid */}
-            <div
-              style={{
-                columnCount: 2,
-                columnGap: "16px",
-                marginTop: "24px",
-              }}
-            >
+            <div className="columns-1 md:columns-2 gap-4 mt-6">
               {/* Image 1 */}
               <div className="beyond-item" style={{ breakInside: "avoid", marginBottom: "16px" }}>
                 <Image
@@ -236,8 +222,8 @@ export default function About() {
           {/* Industrial & Product Design subsection */}
           <div style={{ marginTop: "120px" }}>
             <h3
-              className="font-merriweather font-bold"
-              style={{ fontSize: "36px", color: "#000" }}
+              className="font-merriweather font-bold text-[26px] md:text-[36px]"
+              style={{ color: "#000" }}
             >
               Industrial &amp; Product Designer
             </h3>
@@ -255,13 +241,7 @@ export default function About() {
             </p>
 
             {/* Brick grid */}
-            <div
-              style={{
-                columnCount: 2,
-                columnGap: "16px",
-                marginTop: "24px",
-              }}
-            >
+            <div className="columns-1 md:columns-2 gap-4 mt-6">
               {[
                 { src: "/beyond/industrial-1a.png", alt: "Pop-up gardening cart for elderly", caption: "Design for elderly: A pop-up gardening cart for community common spaces in cities", width: 995, height: 714 },
                 { src: "/beyond/industrial-1b.png", alt: "Windfall lighting exhibit design", caption: "Windfall: Lighting Exhibit Design", width: 1020, height: 743 },
@@ -302,8 +282,8 @@ export default function About() {
           {/* Experimentative Creative subsection */}
           <div style={{ marginTop: "120px" }}>
             <h3
-              className="font-merriweather font-bold"
-              style={{ fontSize: "36px", color: "#000" }}
+              className="font-merriweather font-bold text-[26px] md:text-[36px]"
+              style={{ color: "#000" }}
             >
               Experimentative Creative
             </h3>
@@ -321,13 +301,7 @@ export default function About() {
             </p>
 
             {/* Brick grid */}
-            <div
-              style={{
-                columnCount: 2,
-                columnGap: "16px",
-                marginTop: "24px",
-              }}
-            >
+            <div className="columns-1 md:columns-2 gap-4 mt-6">
               {[
                 { n: 1, alt: "Pop up coffee house poster", caption: "Pop up coffee house invite: A poster designed to spread awareness for National Curry week", width: 996, height: 1533 },
                 { n: 2, alt: "Pop up christmas card", caption: "Pop up christmas card", width: 996, height: 1041 },

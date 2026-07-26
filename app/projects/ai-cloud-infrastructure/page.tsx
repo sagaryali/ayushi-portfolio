@@ -176,10 +176,17 @@ const businessImpact = [
 export default function AiCloudInfrastructure() {
   return (
     <div style={{ backgroundColor: "#FDF6EC", minHeight: "100vh" }}>
+      <style>{`
+        @media (max-width: 767px) {
+          h1.font-merriweather.font-bold { font-size: 32px !important; }
+          h2.font-merriweather.font-bold { font-size: 26px !important; }
+          h3.font-merriweather.font-bold { font-size: 22px !important; }
+        }
+      `}</style>
       <Nav />
 
       {/* Hero Image */}
-      <div style={{ maxWidth: "1120px", margin: "0 auto", padding: "0 48px" }}>
+      <div style={{ maxWidth: "1120px", margin: "0 auto" }} className="px-4 md:px-12">
         <div
           style={{
             position: "relative",
@@ -201,7 +208,7 @@ export default function AiCloudInfrastructure() {
       </div>
 
       {/* Title + Meta */}
-      <div style={{ maxWidth: "1120px", margin: "0 auto", padding: "0 48px" }}>
+      <div style={{ maxWidth: "1120px", margin: "0 auto" }} className="px-4 md:px-12">
         <section style={{ paddingTop: "48px" }}>
           <h1
             className="font-merriweather font-bold"
@@ -212,12 +219,8 @@ export default function AiCloudInfrastructure() {
 
           {/* Meta box */}
           <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr 1fr 1.5fr",
-              gap: "40px",
-              marginTop: "48px",
-            }}
+            style={{ marginTop: "48px" }}
+            className="grid grid-cols-1 md:[grid-template-columns:1fr_1fr_1.5fr] gap-6 md:gap-10"
           >
             <div>
               <p
@@ -301,7 +304,7 @@ export default function AiCloudInfrastructure() {
           marginTop: "80px",
         }}
       >
-        <div style={{ maxWidth: "1120px", margin: "0 auto", padding: "0 48px" }}>
+        <div style={{ maxWidth: "1120px", margin: "0 auto" }} className="px-4 md:px-12">
           <h2
             className="font-merriweather font-bold"
             style={{ fontSize: "36px", marginBottom: "48px" }}
@@ -426,7 +429,7 @@ export default function AiCloudInfrastructure() {
       </section>
 
       {/* Understanding AI and Cloud capacity services */}
-      <div style={{ maxWidth: "1120px", margin: "0 auto", padding: "0 48px" }}>
+      <div style={{ maxWidth: "1120px", margin: "0 auto" }} className="px-4 md:px-12">
         <section style={{ paddingTop: "80px", paddingBottom: "80px" }}>
           <h2
             className="font-merriweather font-bold"
@@ -459,22 +462,12 @@ export default function AiCloudInfrastructure() {
           >
             Our Stakeholders
           </h3>
-          <div
-            style={{
-              display: "flex",
-              gap: "40px",
-              justifyContent: "center",
-              marginBottom: "64px",
-            }}
-          >
+          <div className="flex flex-col md:flex-row gap-10 md:gap-10 justify-center items-center md:items-stretch mb-16">
             {stakeholders.map((s) => (
               <div
                 key={s.title}
-                style={{
-                  flex: 1,
-                  textAlign: "center",
-                  maxWidth: "320px",
-                }}
+                style={{ textAlign: "center", maxWidth: "320px" }}
+                className="w-full md:flex-1"
               >
                 <div
                   style={{
@@ -543,11 +536,8 @@ export default function AiCloudInfrastructure() {
             {journeySteps.map((step, i) => (
               <div key={step.step}>
                 <div
-                  style={{
-                    border: "2px solid #275F55",
-                    borderRadius: "16px",
-                    padding: "24px 32px",
-                  }}
+                  style={{ border: "2px solid #275F55", borderRadius: "16px" }}
+                  className="p-5 md:px-8 md:py-6"
                 >
                   <p
                     className="font-avenir"
@@ -570,7 +560,7 @@ export default function AiCloudInfrastructure() {
                   >
                     {step.description}
                   </p>
-                  <div style={{ display: "flex", gap: "48px" }}>
+                  <div className="flex flex-col md:flex-row gap-6 md:gap-12">
                     <div style={{ flex: 1 }}>
                       <p
                         className="font-avenir"
@@ -605,10 +595,10 @@ export default function AiCloudInfrastructure() {
                     </div>
                     <div
                       style={{
-                        width: "1px",
                         backgroundColor: "#275F55",
                         opacity: 0.3,
                       }}
+                      className="hidden md:block w-px"
                     />
                     <div style={{ flex: 1 }}>
                       <p
@@ -688,13 +678,8 @@ export default function AiCloudInfrastructure() {
 
           {/* Current vs Future State Table */}
           <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr 1fr",
-              columnGap: "48px",
-              rowGap: "16px",
-              marginBottom: "64px",
-            }}
+            style={{ marginBottom: "64px" }}
+            className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-x-12 md:gap-y-4"
           >
             <p
               className="font-avenir"
@@ -754,12 +739,8 @@ export default function AiCloudInfrastructure() {
             Our competitors...spreadsheets
           </h3>
           <div
-            style={{
-              display: "flex",
-              gap: "32px",
-              alignItems: "flex-end",
-              marginBottom: "40px",
-            }}
+            style={{ marginBottom: "40px" }}
+            className="flex flex-col md:flex-row md:items-end gap-8 md:gap-8"
           >
             <div
               style={{
@@ -841,7 +822,7 @@ export default function AiCloudInfrastructure() {
           >
             Design Plan
           </h2>
-          <div style={{ display: "flex", gap: "40px", marginBottom: "48px" }}>
+          <div className="flex flex-col md:flex-row gap-8 md:gap-10 mb-8 md:mb-12">
             {designPlan.columns.map((col) => (
               <div key={col.title} style={{ flex: 1 }}>
                 <p
@@ -867,16 +848,11 @@ export default function AiCloudInfrastructure() {
               </div>
             ))}
           </div>
-          <div style={{ display: "flex", gap: "40px" }}>
+          <div className="flex flex-col md:flex-row gap-8 md:gap-10">
             {designPlan.columns.map((col) => (
               <div
                 key={col.title}
-                style={{
-                  flex: 1,
-                  display: "flex",
-                  flexDirection: "column",
-                  gap: "16px",
-                }}
+                style={{ flex: 1, display: "flex", flexDirection: "column", gap: "16px" }}
               >
                 {col.items.map((item) => (
                   <div
@@ -1177,13 +1153,7 @@ export default function AiCloudInfrastructure() {
           >
             User Impact
           </h3>
-          <div
-            style={{
-              display: "flex",
-              gap: "24px",
-              marginBottom: "64px",
-            }}
-          >
+          <div className="flex flex-col md:flex-row gap-6 md:gap-6 mb-10 md:mb-16">
             {userImpact.map((item) => (
               <div
                 key={item.num}
@@ -1236,7 +1206,7 @@ export default function AiCloudInfrastructure() {
           >
             Business Impact
           </h3>
-          <div style={{ display: "flex", gap: "24px" }}>
+          <div className="flex flex-col md:flex-row gap-6 md:gap-6">
             {businessImpact.map((item) => (
               <div
                 key={item.num}

@@ -110,13 +110,13 @@ export default function Home() {
 
       <Nav />
 
-      <div style={{ maxWidth: "1120px", margin: "0 auto", padding: "0 48px" }}>
+      <div style={{ maxWidth: "1120px", margin: "0 auto" }} className="px-4 md:px-12">
 
         {/* Hero */}
-        <section style={{ paddingTop: "120px", paddingBottom: "0" }}>
+        <section className="pt-16 md:pt-[120px] pb-0">
           <h1
-            className="font-merriweather font-bold"
-            style={{ fontSize: "48px", lineHeight: 1.2 }}
+            className="font-merriweather font-bold text-[32px] md:text-[48px]"
+            style={{ lineHeight: 1.2 }}
           >
             Hi, I&apos;m Ayushi, a{" "}
             <span
@@ -127,8 +127,8 @@ export default function Home() {
             </span>
           </h1>
           <p
-            className="font-merriweather font-bold"
-            style={{ fontSize: "28px", lineHeight: 1.4, marginTop: "32px", maxWidth: "760px" }}
+            className="font-merriweather font-bold text-[20px] md:text-[28px]"
+            style={{ lineHeight: 1.4, marginTop: "32px", maxWidth: "760px" }}
           >
             I enjoy doing the messy work to craft meaningful impact for people,
             business, and the planet.
@@ -137,7 +137,7 @@ export default function Home() {
 
         {/* Tool logos */}
         {tools.length > 0 && (
-          <section style={{ paddingTop: "72px", paddingBottom: "0" }}>
+          <section className="pt-10 md:pt-[72px] pb-0">
             <div style={{ display: "flex", flexWrap: "wrap", gap: "20px" }}>
               {tools.map((tool) => (
                 <div
@@ -173,10 +173,10 @@ export default function Home() {
         )}
 
         {/* Featured Projects */}
-        <section style={{ paddingTop: "96px", paddingBottom: "120px" }}>
+        <section className="pt-16 md:pt-24 pb-20 md:pb-[120px]">
           <h2
-            className="font-merriweather font-bold"
-            style={{ fontSize: "48px", color: "#275F55", marginBottom: "40px" }}
+            className="font-merriweather font-bold text-[32px] md:text-[48px]"
+            style={{ color: "#275F55", marginBottom: "40px" }}
           >
             Featured Projects
           </h2>
@@ -184,9 +184,12 @@ export default function Home() {
           <div style={{ display: "flex", flexDirection: "column", gap: "80px" }}>
             {projects.map((project) => (
               <article key={project.slug}>
-                <div style={{ display: "flex", gap: "48px", alignItems: "stretch", flexWrap: "wrap" }}>
+                <div className="flex flex-col md:flex-row md:items-stretch gap-8 md:gap-12">
                   {/* Cover image */}
-                  <div style={{ flex: "1 1 420px", position: "relative", borderRadius: "4px", overflow: "hidden" }}>
+                  <div
+                    style={{ borderRadius: "4px", overflow: "hidden" }}
+                    className="relative w-full aspect-[4/3] md:aspect-auto md:w-auto md:flex-1"
+                  >
                     <Image
                       src={project.image}
                       alt={project.title}
@@ -196,10 +199,10 @@ export default function Home() {
                   </div>
 
                   {/* Right column: title, summary, CTA */}
-                  <div style={{ flex: "1 1 420px", display: "flex", flexDirection: "column", justifyContent: "center" }}>
+                  <div className="flex flex-col justify-center md:flex-1">
                     <h3
-                      className="font-merriweather font-bold"
-                      style={{ fontSize: "36px", lineHeight: 1.2 }}
+                      className="font-merriweather font-bold text-[26px] md:text-[36px]"
+                      style={{ lineHeight: 1.2 }}
                     >
                       {project.title}
                     </h3>
@@ -214,7 +217,7 @@ export default function Home() {
                     <div style={{ marginTop: "28px" }}>
                       <Link
                         href={`/projects/${project.slug}`}
-                        className="font-avenir inline-flex items-center justify-center gap-2 no-underline"
+                        className="font-avenir inline-flex items-center justify-center gap-2 no-underline w-full md:w-[65%]"
                         style={{
                           backgroundColor: "#275F55",
                           color: "#FDF6EC",
@@ -222,7 +225,6 @@ export default function Home() {
                           fontWeight: 750,
                           padding: "18px 28px",
                           borderRadius: "24px",
-                          width: "65%",
                         }}
                       >
                         <Image src="/icons/lock.png" alt="" width={28} height={28} />
@@ -239,14 +241,11 @@ export default function Home() {
                 {/* Meta box */}
                 <div
                   style={{
-                    display: "grid",
-                    gridTemplateColumns: "repeat(3, 1fr)",
-                    gap: "40px",
-                    marginTop: "40px",
-                    padding: "24px 32px",
                     border: "1px solid #275F55",
                     borderRadius: "16px",
+                    marginTop: "40px",
                   }}
+                  className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-10 p-5 md:px-8 md:py-6"
                 >
                   <div>
                     <p className="font-avenir" style={{ fontSize: "13px", fontWeight: 300, textTransform: "uppercase", letterSpacing: "0.08em", color: "#666" }}>

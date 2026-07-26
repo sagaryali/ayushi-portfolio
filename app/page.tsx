@@ -11,7 +11,7 @@ const tools: { name: string; description: string; src: string }[] = [
   { name: "Design Research", description: "Design Research and Strategy for global clients", src: "/logos/logo2.png" },
   { name: "Philips x Gates", description: "Experience Designer for a Philips X Gates Foundation initiative", src: "/logos/logo3.png" },
   { name: "HCI", description: "M.S. in Human Computer Interaction and UX Design", src: "/logos/logo4.png" },
-  { name: "Fortune 7", description: "UX Designer for a Fortune 7 client's AI and Cloud business", src: "/logos/logo5.png" },
+  { name: "Fortune 5", description: "UX Designer for a Fortune 5 client's AI and Cloud business", src: "/logos/logo5.png" },
 ];
 
 const projects = [

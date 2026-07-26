@@ -169,7 +169,7 @@ const businessImpact = [
     num: 3,
     title: "Increasing fulfillment rates",
     description:
-      "Increasing fulfillment efficiency minimizes idle capacity, directly recovering dollars per chip per hour in lost revenue",
+      "Increasing fulfillment rates of customer deals, minimizing idle capacity that in turn recovers lost revenue for every chip per hour",
   },
 ];
 

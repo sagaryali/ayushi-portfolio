@@ -23,7 +23,7 @@ const projects = [
     capabilities: ["User Experience design", "Systems Design"],
     team: "Senior UX Designer (Ayushi Shah), Product Manager, Technical Program Manager, UX Research, Engineering",
     summary:
-      "Consolidated a fragmented cloud capacity planning process into a unified workflow across stakeholders. The new system slashed planning time by 80% and minimized idle capacity, directly recovering $3.50 per chip per hour in previously lost revenue.",
+      "Consolidated a fragmented cloud capacity planning process into a unified workflow across stakeholders. The new system slashed planning time by 80% and minimized idle capacity, directly recovering revenue for every chip per hour previously lost.",
   },
   {
     slug: "philips",

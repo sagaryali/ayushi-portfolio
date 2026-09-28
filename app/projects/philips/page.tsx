@@ -1,5 +1,6 @@
 import Nav from "../../components/Nav";
 import Footer from "../../components/Footer";
+import ScrollSnapSection from "../../components/ScrollSnapSection";
 import Image from "next/image";
 
 const scopeQuestions = [
@@ -232,51 +233,56 @@ export default function Philips() {
           h2.font-merriweather.font-bold { font-size: 26px !important; }
           h3.font-merriweather.font-bold { font-size: 22px !important; }
         }
+        html {
+          scroll-snap-type: y mandatory;
+        }
       `}</style>
-      <Nav />
+      <div style={{ scrollSnapAlign: "start" }}>
+        <Nav />
 
-      {/* Hero Image */}
-      <div style={{ maxWidth: "1120px", margin: "0 auto" }} className="px-4 md:px-12">
-        <div
-          style={{
-            position: "relative",
-            width: "100%",
-            aspectRatio: "3024 / 4032",
-            maxHeight: "640px",
-            borderRadius: "4px",
-            overflow: "hidden",
-            marginTop: "40px",
-          }}
-        >
-          <Image
-            src="/projects/philips/hero.png"
-            alt="Frontline healthcare worker using Lumify handheld ultrasound"
-            fill
-            className="object-cover"
-            priority
-          />
+        {/* Hero Image */}
+        <div style={{ maxWidth: "1120px", margin: "0 auto" }} className="px-4 md:px-12">
           <div
             style={{
-              position: "absolute",
-              top: "24px",
-              right: "24px",
-              width: "56px",
-              height: "72px",
+              position: "relative",
+              width: "100%",
+              aspectRatio: "3024 / 4032",
+              maxHeight: "640px",
+              borderRadius: "4px",
+              overflow: "hidden",
+              marginTop: "40px",
             }}
           >
             <Image
-              src="/projects/philips/philips-logo.png"
-              alt="Philips logo"
+              src="/projects/philips/hero.png"
+              alt="Frontline healthcare worker using Lumify handheld ultrasound"
               fill
-              className="object-contain"
+              className="object-cover"
+              priority
             />
+            <div
+              style={{
+                position: "absolute",
+                top: "24px",
+                right: "24px",
+                width: "56px",
+                height: "72px",
+              }}
+            >
+              <Image
+                src="/projects/philips/philips-logo.png"
+                alt="Philips logo"
+                fill
+                className="object-contain"
+              />
+            </div>
           </div>
         </div>
       </div>
 
       {/* Title + Meta */}
       <div style={{ maxWidth: "1120px", margin: "0 auto" }} className="px-4 md:px-12">
-        <section style={{ paddingTop: "48px" }}>
+        <ScrollSnapSection style={{ paddingTop: "48px" }}>
           <h1
             className="font-merriweather font-bold"
             style={{ fontSize: "48px", lineHeight: 1.2 }}
@@ -351,11 +357,11 @@ export default function Philips() {
               </p>
             </div>
           </div>
-        </section>
+        </ScrollSnapSection>
       </div>
 
       {/* Overview Section — teal background */}
-      <section
+      <ScrollSnapSection
         style={{
           backgroundColor: "#275F55",
           color: "#FDF6EC",
@@ -518,11 +524,11 @@ export default function Philips() {
             </p>
           </div>
         </div>
-      </section>
+      </ScrollSnapSection>
 
       <div style={{ maxWidth: "1120px", margin: "0 auto" }} className="px-4 md:px-12">
         {/* Defining the scope */}
-        <section style={{ paddingTop: "80px", paddingBottom: "80px" }}>
+        <ScrollSnapSection style={{ paddingTop: "80px", paddingBottom: "80px" }}>
           <h2
             className="font-merriweather font-bold"
             style={{
@@ -591,10 +597,10 @@ export default function Philips() {
               </div>
             ))}
           </div>
-        </section>
+        </ScrollSnapSection>
 
         {/* The Value Proposition */}
-        <section style={{ paddingBottom: "80px" }}>
+        <ScrollSnapSection style={{ paddingBottom: "80px" }}>
           <h2
             className="font-merriweather font-bold"
             style={{
@@ -613,10 +619,10 @@ export default function Philips() {
             these three dimensions of the product through the following
             methods:
           </p>
-        </section>
+        </ScrollSnapSection>
 
         {/* Establishing the opportunity */}
-        <section style={{ paddingBottom: "80px" }}>
+        <ScrollSnapSection style={{ paddingBottom: "80px" }}>
           <h3
             className="font-merriweather font-bold"
             style={{ fontSize: "36px", marginBottom: "40px" }}
@@ -655,10 +661,10 @@ export default function Philips() {
           </div>
 
           <InsightSolution items={opportunityInsights} />
-        </section>
+        </ScrollSnapSection>
 
         {/* Validating the solution */}
-        <section style={{ paddingBottom: "80px" }}>
+        <ScrollSnapSection style={{ paddingBottom: "80px" }}>
           <h3
             className="font-merriweather font-bold"
             style={{ fontSize: "36px", marginBottom: "40px" }}
@@ -710,10 +716,10 @@ export default function Philips() {
           </div>
 
           <InsightSolution items={validationInsights} />
-        </section>
+        </ScrollSnapSection>
 
         {/* Defining */}
-        <section style={{ paddingBottom: "80px" }}>
+        <ScrollSnapSection style={{ paddingBottom: "80px" }}>
           <h3
             className="font-merriweather font-bold"
             style={{ fontSize: "36px", marginBottom: "40px" }}
@@ -748,12 +754,12 @@ export default function Philips() {
           </div>
 
           <InsightSolution items={definingInsights} />
-        </section>
+        </ScrollSnapSection>
       </div>
 
       {/* Outcome */}
       <div style={{ maxWidth: "1120px", margin: "0 auto" }} className="px-4 md:px-12">
-        <section style={{ paddingTop: "80px", paddingBottom: "80px" }}>
+        <ScrollSnapSection style={{ paddingTop: "80px", paddingBottom: "80px" }}>
           <h2
             className="font-merriweather font-bold"
             style={{
@@ -1085,10 +1091,10 @@ export default function Philips() {
               </Caption>
             </div>
           </div>
-        </section>
+        </ScrollSnapSection>
 
         {/* Impact */}
-        <section style={{ paddingTop: "80px", paddingBottom: "120px" }}>
+        <ScrollSnapSection style={{ paddingTop: "80px", paddingBottom: "120px" }}>
           <h2
             className="font-merriweather font-bold"
             style={{
@@ -1148,10 +1154,12 @@ export default function Philips() {
               </div>
             ))}
           </div>
-        </section>
+        </ScrollSnapSection>
       </div>
 
-      <Footer />
+      <div style={{ scrollSnapAlign: "start" }}>
+        <Footer />
+      </div>
     </div>
   );
 }

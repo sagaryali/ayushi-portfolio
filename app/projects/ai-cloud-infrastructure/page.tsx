@@ -1,6 +1,7 @@
 import { Fragment } from "react";
 import Nav from "../../components/Nav";
 import Footer from "../../components/Footer";
+import ScrollSnapSection from "../../components/ScrollSnapSection";
 import Image from "next/image";
 
 const stakeholders = [
@@ -182,34 +183,39 @@ export default function AiCloudInfrastructure() {
           h2.font-merriweather.font-bold { font-size: 26px !important; }
           h3.font-merriweather.font-bold { font-size: 22px !important; }
         }
+        html {
+          scroll-snap-type: y mandatory;
+        }
       `}</style>
-      <Nav />
+      <div style={{ scrollSnapAlign: "start" }}>
+        <Nav />
 
-      {/* Hero Image */}
-      <div style={{ maxWidth: "1120px", margin: "0 auto" }} className="px-4 md:px-12">
-        <div
-          style={{
-            position: "relative",
-            width: "100%",
-            aspectRatio: "1451 / 967",
-            borderRadius: "4px",
-            overflow: "hidden",
-            marginTop: "40px",
-          }}
-        >
-          <Image
-            src="/projects/ai-cloud/hero.png"
-            alt="AI Cloud Infrastructure planning"
-            fill
-            className="object-cover"
-            priority
-          />
+        {/* Hero Image */}
+        <div style={{ maxWidth: "1120px", margin: "0 auto" }} className="px-4 md:px-12">
+          <div
+            style={{
+              position: "relative",
+              width: "100%",
+              aspectRatio: "1451 / 967",
+              borderRadius: "4px",
+              overflow: "hidden",
+              marginTop: "40px",
+            }}
+          >
+            <Image
+              src="/projects/ai-cloud/hero.png"
+              alt="AI Cloud Infrastructure planning"
+              fill
+              className="object-cover"
+              priority
+            />
+          </div>
         </div>
       </div>
 
       {/* Title + Meta */}
       <div style={{ maxWidth: "1120px", margin: "0 auto" }} className="px-4 md:px-12">
-        <section style={{ paddingTop: "48px" }}>
+        <ScrollSnapSection style={{ paddingTop: "48px" }}>
           <h1
             className="font-merriweather font-bold"
             style={{ fontSize: "48px", lineHeight: 1.2 }}
@@ -292,11 +298,11 @@ export default function AiCloudInfrastructure() {
               </p>
             </div>
           </div>
-        </section>
+        </ScrollSnapSection>
       </div>
 
       {/* Overview Section — teal background */}
-      <section
+      <ScrollSnapSection
         style={{
           backgroundColor: "#275F55",
           color: "#FDF6EC",
@@ -426,11 +432,11 @@ export default function AiCloudInfrastructure() {
             </p>
           </div>
         </div>
-      </section>
+      </ScrollSnapSection>
 
       {/* Understanding AI and Cloud capacity services */}
       <div style={{ maxWidth: "1120px", margin: "0 auto" }} className="px-4 md:px-12">
-        <section style={{ paddingTop: "80px", paddingBottom: "80px" }}>
+        <ScrollSnapSection style={{ paddingTop: "80px", paddingBottom: "80px" }}>
           <h2
             className="font-merriweather font-bold"
             style={{
@@ -661,10 +667,10 @@ export default function AiCloudInfrastructure() {
               </div>
             ))}
           </div>
-        </section>
+        </ScrollSnapSection>
 
         {/* Vision */}
-        <section style={{ paddingTop: "80px", paddingBottom: "80px" }}>
+        <ScrollSnapSection style={{ paddingTop: "80px", paddingBottom: "80px" }}>
           <h2
             className="font-merriweather font-bold"
             style={{
@@ -808,10 +814,10 @@ export default function AiCloudInfrastructure() {
             Therefore, our goal was to keep the ease and speed of spreadsheets,
             but design more reliant and smarter ways of working.
           </p>
-        </section>
+        </ScrollSnapSection>
 
         {/* Design Plan */}
-        <section style={{ paddingTop: "80px", paddingBottom: "80px" }}>
+        <ScrollSnapSection style={{ paddingTop: "80px", paddingBottom: "80px" }}>
           <h2
             className="font-merriweather font-bold"
             style={{
@@ -879,10 +885,10 @@ export default function AiCloudInfrastructure() {
               </div>
             ))}
           </div>
-        </section>
+        </ScrollSnapSection>
 
         {/* Outcome */}
-        <section style={{ paddingTop: "80px", paddingBottom: "80px" }}>
+        <ScrollSnapSection style={{ paddingTop: "80px", paddingBottom: "80px" }}>
           <h2
             className="font-merriweather font-bold"
             style={{
@@ -1131,10 +1137,10 @@ export default function AiCloudInfrastructure() {
               vibe and functionality of the real-world solution
             </p>
           </div>
-        </section>
+        </ScrollSnapSection>
 
         {/* Impact */}
-        <section style={{ paddingTop: "80px", paddingBottom: "80px" }}>
+        <ScrollSnapSection style={{ paddingTop: "80px", paddingBottom: "80px" }}>
           <h2
             className="font-merriweather font-bold"
             style={{
@@ -1239,10 +1245,10 @@ export default function AiCloudInfrastructure() {
               </div>
             ))}
           </div>
-        </section>
+        </ScrollSnapSection>
 
         {/* What's Next */}
-        <section style={{ paddingTop: "80px", paddingBottom: "120px" }}>
+        <ScrollSnapSection style={{ paddingTop: "80px", paddingBottom: "120px" }}>
           <h2
             className="font-merriweather font-bold"
             style={{
@@ -1298,10 +1304,12 @@ export default function AiCloudInfrastructure() {
               Added transparency for more accurate decision-making.
             </li>
           </ol>
-        </section>
+        </ScrollSnapSection>
       </div>
 
-      <Footer />
+      <div style={{ scrollSnapAlign: "start" }}>
+        <Footer />
+      </div>
     </div>
   );
 }

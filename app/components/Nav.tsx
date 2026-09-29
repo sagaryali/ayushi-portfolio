@@ -8,7 +8,7 @@ export default function Nav() {
   const links = [
     { label: "Home", href: "/" },
     { label: "About", href: "/about" },
-    { label: "Resume", href: "/resume.pdf", external: true },
+    { label: "Resume", href: "/resume" },
   ];
 
   return (
@@ -68,25 +68,13 @@ export default function Nav() {
         <ul className="flex flex-wrap justify-end gap-2 md:gap-4" style={{ listStyle: "none", margin: 0, padding: 0 }}>
           {links.map((link) => (
             <li key={link.href}>
-              {link.external ? (
-                <a
-                  href={link.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="font-avenir text-black nav-link"
-                  style={{ fontSize: "16px", fontWeight: 400 }}
-                >
-                  {link.label}
-                </a>
-              ) : (
-                <Link
-                  href={link.href}
-                  className={`font-avenir text-black nav-link${pathname === link.href ? " active" : ""}`}
-                  style={{ fontSize: "16px", fontWeight: 400 }}
-                >
-                  {link.label}
-                </Link>
-              )}
+              <Link
+                href={link.href}
+                className={`font-avenir text-black nav-link${pathname === link.href ? " active" : ""}`}
+                style={{ fontSize: "16px", fontWeight: 400 }}
+              >
+                {link.label}
+              </Link>
             </li>
           ))}
         </ul>

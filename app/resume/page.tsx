@@ -168,89 +168,38 @@ export default function Resume() {
         </div>
 
         {/* Header */}
-        <div
-          className="flex flex-col md:flex-row md:justify-between md:items-start gap-6 pb-10 md:pb-14"
-          style={{ borderBottom: "2px solid #275F55" }}
-        >
-          <div>
-            <h1
-              className="font-merriweather font-bold resume-name"
-              style={{ fontSize: "48px", color: "#000" }}
-            >
-              Ayushi Shah
-            </h1>
-            <p
-              className="font-avenir"
-              style={{ fontSize: "20px", color: "#275F55", marginTop: "4px" }}
-            >
-              UX Designer | Strategist
-            </p>
-            <p
-              className="font-avenir"
-              style={{
-                fontSize: "16px",
-                fontWeight: 300,
-                lineHeight: 1.7,
-                marginTop: "16px",
-                maxWidth: "560px",
-              }}
-            >
-              UX Designer with 3+ years of experience crafting user-centered and
-              research-driven design solutions. Skilled in cross-functional
-              collaboration and applying design methods across industries to
-              enhance product impact for both businesses and users.
-            </p>
-          </div>
-
-          <div className="flex flex-col gap-2 md:items-end shrink-0">
-            <a
-              href="https://ayushidesigns.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-avenir"
-              style={{
-                fontSize: "15px",
-                color: "#000",
-                textDecoration: "underline",
-              }}
-            >
-              ayushidesigns.com
-            </a>
-            <a
-              href="https://www.linkedin.com/in/ayushi-shah0607/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-avenir"
-              style={{
-                fontSize: "15px",
-                color: "#000",
-                textDecoration: "underline",
-              }}
-            >
-              linkedin.com/in/ayushi-shah0607
-            </a>
-            <a
-              href="mailto:ayushi0607@gmail.com"
-              className="font-avenir"
-              style={{
-                fontSize: "15px",
-                color: "#000",
-                textDecoration: "underline",
-              }}
-            >
-              ayushi0607@gmail.com
-            </a>
-            <span
-              className="font-avenir"
-              style={{ fontSize: "15px", color: "#000" }}
-            >
-              +1 (347) 222 5833
-            </span>
-          </div>
+        <div className="pb-4 md:pb-6">
+          <h1
+            className="font-merriweather font-bold resume-name"
+            style={{ fontSize: "48px", color: "#000" }}
+          >
+            Ayushi Shah
+          </h1>
+          <p
+            className="font-avenir"
+            style={{ fontSize: "20px", color: "#275F55", marginTop: "4px" }}
+          >
+            UX Designer | Strategist
+          </p>
+          <p
+            className="font-avenir"
+            style={{
+              fontSize: "16px",
+              fontWeight: 300,
+              lineHeight: 1.7,
+              marginTop: "16px",
+              maxWidth: "560px",
+            }}
+          >
+            UX Designer with 3+ years of experience crafting user-centered and
+            research-driven design solutions. Skilled in cross-functional
+            collaboration and applying design methods across industries to
+            enhance product impact for both businesses and users.
+          </p>
         </div>
 
         {/* Body */}
-        <div className="flex flex-col gap-12 pt-10 md:pt-14">
+        <div className="flex flex-col gap-12 pt-2 md:pt-4">
           <section>
             <SectionHeading>Experience</SectionHeading>
             <div className="flex flex-col gap-8">

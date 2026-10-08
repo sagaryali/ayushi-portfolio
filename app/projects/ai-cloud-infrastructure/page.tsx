@@ -148,7 +148,7 @@ const userImpact = [
     num: 3,
     title: "Reducing errors",
     description:
-      "Caught ~80% of errors early through planning-stage validation",
+      "Caught ~95% of errors early through planning-stage validation",
     quote:
       '"Our current methods can be error-prone, so this could reduce our chances of planning errors like double-booking."',
   },

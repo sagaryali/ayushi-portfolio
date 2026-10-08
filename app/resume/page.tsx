@@ -90,7 +90,7 @@ const leadership = [
     ],
   },
   {
-    title: "AR Training Experience for Workers with Autism",
+    title: "AR Training Experience for Workers with Autism, Luv Michael Granola",
     dates: "October 2023 - May 2025",
     bullets: [
       "Developed an AR-based learning tool for a nonprofit kitchen’s workers with autism, increasing user engagement and retention.",

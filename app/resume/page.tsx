@@ -5,54 +5,51 @@ const experience = [
   {
     role: "UX/UI Designer",
     company: "Grid Dynamics",
+    location: "New York, NY",
     dates: "August 2025 - Present",
     bullets: [
-      "Collaborating with Product Leads and Engineers at a leading technology company to redesign the cloud capacity planning experience for AI customers. Designing and testing end-to-end user journeys and high-fidelity mockups to create a unified, intelligent workflow that replaces fragmented dashboards and spreadsheets. Reduced planning time by 80%, with ongoing efforts to further enhance usability and intelligent decision-making capabilities",
+      "Lead the design of end-to-end user-agent interactions for a cloud capacity planning tool used by Demand Planners at a Fortune 5 company, consolidating 3 spreadsheets and 2 dashboards into one system and cutting user task time by up to 80% so far (10 → 2 min per plan).",
+      "Design wireframes, define user workflows, and run usability tests, then partner with Engineers to build high-fidelity prototypes; work closely with Product Managers to shape the roadmap by advocating for users and the business.",
+      "Pioneer the build and maintenance of a shared design system of reusable components and interactions that scale the product experience across multiple tools; collaborate with cross-functional teams to design cross-product flows that serve multiple user groups.",
     ],
   },
   {
     role: "UX Designer",
-    company: "Philips Healthcare",
+    company: "Philips Experience Design",
+    location: "Remote",
     dates: "July 2022 - July 2023",
     bullets: [
-      "Contributed to a Gates Foundation–funded project focused on reducing pregnancy-related mortality in underserved communities by designing an AI-powered prenatal screening tool; led field research, market analysis, prototype iteration, and usability testing in collaboration with Researchers, Business Leads, Clinicians, and ML Engineers. Delivered an end-to-end product experience scalable for 5 user groups across 2 geographies, integrating user needs, business requirements, and regional medical regulations",
+      "Designed an AI-powered prenatal screening tool from first sketch to pilot-ready delivery, defining how Clinicians and community health workers could conduct screening to identify high-risk pregnancies and support planned pregnancies and delivery.",
+      "Delivered an end-to-end service blueprint scalable for 5 user groups across 2 geographies, integrating user needs, business requirements, and regional medical regulations into a structured clinical workflow. Proposed an ergonomic mobile cart design to accompany the screening technology, projected to enable health workers to conduct 2x more scans per day.",
+      "Led field research, prototype iteration, A/B testing, and usability testing with Researchers, Business Leads, Clinicians, and ML Engineers.",
     ],
   },
   {
-    role: "UX Designer & Strategist",
+    role: "Junior Design Strategist",
     company: "Designit",
+    location: "New York, NY",
     dates: "September 2021 - June 2022",
     bullets: [
-      "Enhanced the consumer experience for a global B2B hygiene company by implementing user research and facilitating co-creation workshops; collaborated with a multidisciplinary design team to develop an experience strategy and a scalable end-to-end journey focused on meeting buyer goals and fostering brand loyalty, scalable across 6 geographies and 3 industries",
-      "Led a brand strategy initiative for a non-profit to improve access to technology for the visually impaired; conducted user interviews, client workshops, and analyzed opportunities to implement an outreach solution that projected a 4,000-user growth within 3 years",
-      "Drove digital content strategies as part of the Global Marketing team, increasing the following by 33,648 users",
+      "Enhanced the customer experience for a global B2B hygiene company through user research and co-creation workshops; collaborated with a multidisciplinary team to develop an experience strategy and scalable journey across 6 geographies and 3 industries.",
+      "Led a brand strategy initiative for a nonprofit improving technology access for the visually impaired; conducted user interviews, client workshops, and opportunity analysis to develop an outreach solution projected to grow the user base by 4,000 within 3 years.",
     ],
   },
   {
-    role: "Designer & Strategist",
+    role: "Product Design Intern",
+    company: "Uncommon Goods",
+    location: "Brooklyn, NY",
+    dates: "June 2021 - September 2021",
+    bullets: [
+      "Designed 3 consumer products from concept to CAD, partnering with manufacturers to launch 1 at a projected 40% gross margin.",
+    ],
+  },
+  {
+    role: "Design Intern",
     company: "Designit",
+    location: "Bangalore, India",
     dates: "June 2020 - December 2020",
     bullets: [
-      'Produced a visual report on "The Impact of the Pandemic on the Beauty and Wellness Industry" by gathering insights through qualitative and quantitative research, including 15+ user and expert interviews and 50+ survey responses; developed and presented actionable design solutions to elevate post-pandemic user experiences for relevant clients',
-    ],
-  },
-];
-
-const additionalExperience = [
-  {
-    role: "Adjunct Professor",
-    company: "New York University",
-    dates: "May 2025 - July 2025",
-    bullets: [
-      'Taught an "Intro to UX Design" course for high school students, covering design principles, methodologies, tools, and AI strategies',
-    ],
-  },
-  {
-    role: "UX Designer",
-    company: "Luv Michael Granola (via New York University)",
-    dates: "September 2023 - May 2025",
-    bullets: [
-      "Developed an AR-based learning tool for workers with autism for a non-profit kitchen, increasing user engagement and retention rates",
+      "Produced a report on “The Impact of the Pandemic on the Beauty and Wellness Industry” through qualitative and quantitative research, including 15+ user and expert interviews and 50+ survey responses; presented actionable design solutions to clients.",
     ],
   },
 ];
@@ -60,19 +57,44 @@ const additionalExperience = [
 const education = [
   {
     school: "New York University",
+    location: "New York, NY",
     dates: "May 2025",
-    degree: "Master of Science,",
-    program: "Integrated Design & Media",
+    degree:
+      "M.S. Integrated Design & Media, Recipient of the Merit Scholarship",
     coursework:
-      "Relevant coursework: User Experience Design, Strategy, Interaction Design, Accessibility, Human-Computer Interaction",
+      "Relevant coursework: User Experience Design, Interaction Design, Accessibility, Human-Computer Interaction",
   },
   {
     school: "Pratt Institute",
+    location: "New York, NY",
     dates: "May 2021",
-    degree: "Bachelor of Design,",
-    program: "Industrial Design",
+    degree: "Bachelor of Industrial Design, Graduated with Honors",
     coursework:
-      "Relevant coursework: Product Design, Design Research, Visual Design, Sustainability",
+      "Relevant coursework: Product Design, Visual Design, Psychology, Sustainability",
+  },
+];
+
+const leadership = [
+  {
+    title: "ADPList Mentor",
+    dates: "October 2026 - Present",
+    bullets: [
+      "Mentor early-career designers through portfolio reviews, case-study storytelling, and interview prep for technically complex roles.",
+    ],
+  },
+  {
+    title: "Adjunct Professor, NYU",
+    dates: "May 2025 - July 2025",
+    bullets: [
+      "Taught an “Intro to UX Design” bootcamp, covering design principles, methodologies, tools, and AI design strategies.",
+    ],
+  },
+  {
+    title: "AR Training Experience for Workers with Autism",
+    dates: "October 2023 - May 2025",
+    bullets: [
+      "Developed an AR-based learning tool for a nonprofit kitchen’s workers with autism, increasing user engagement and retention.",
+    ],
   },
 ];
 
@@ -81,36 +103,42 @@ const skills = [
     category: "Tools",
     items: [
       "Figma",
-      "Adobe Creative Suite (Photoshop, Illustrator, XD)",
+      "Adobe Creative Suite (Photoshop, Illustrator)",
       "Miro",
+      "HTML/CSS",
       "Google Workspace",
-      "AI prototyping tools (Google Gemini, Google AI Studio, Google Stitch, Figma Make, Claude)",
+      "AI prototyping tools (Gemini, Claude Design, Claude Code, Google AI Studio, Google Stitch, Figma Make)",
     ],
   },
   {
     category: "Design",
     items: [
+      "Agent & AI Interaction Design",
+      "Human-AI Workflow Design",
       "Product Strategy",
-      "Creative Problem Solving",
-      "User Journey Mapping",
-      "Ideation",
-      "Prototyping",
-      "Systems workflow mapping",
+      "Wireframing",
+      "High-Fidelity Prototyping",
       "User Flows",
       "Information Architecture",
-      "Visual Communication",
-      "Accessibility Principles",
+      "Responsive Design",
+      "Accessibility (WCAG)",
       "Inclusive Design",
-      "Iconography & Visual Design",
+      "Design Systems",
+      "Design Handoff",
+      "Cross-Functional Collaboration",
+      "Stakeholder Management",
+      "Data Visualization",
     ],
   },
   {
     category: "Research",
     items: [
-      "Qualitative & Quantitative User Research",
+      "Qualitative & Quantitative User Research Methods",
+      "Domain Immersion & Field Research",
       "Co-Creation Workshops",
-      "Usability Studies",
-      "Analysis",
+      "Usability Testing",
+      "A/B Testing",
+      "Insight Analysis",
     ],
   },
 ];
@@ -204,7 +232,7 @@ export default function Resume() {
             <SectionHeading>Experience</SectionHeading>
             <div className="flex flex-col gap-8">
               {experience.map((job) => (
-                <div key={job.role + job.dates}>
+                <div key={job.company + job.role + job.dates}>
                   <div className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-1">
                     <p
                       className="font-merriweather font-bold"
@@ -228,56 +256,16 @@ export default function Resume() {
                     }}
                   >
                     {job.role}
-                  </p>
-                  <ul style={{ marginTop: "8px", paddingLeft: "20px" }}>
-                    {job.bullets.map((b) => (
-                      <li
-                        key={b}
-                        className="font-avenir"
-                        style={{
-                          fontSize: "15px",
-                          fontWeight: 300,
-                          lineHeight: 1.7,
-                          marginBottom: "8px",
-                        }}
-                      >
-                        {b}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ))}
-            </div>
-          </section>
-
-          <section>
-            <SectionHeading>Additional Experience</SectionHeading>
-            <div className="flex flex-col gap-8">
-              {additionalExperience.map((job) => (
-                <div key={job.role + job.dates}>
-                  <div className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-1">
-                    <p
-                      className="font-merriweather font-bold"
-                      style={{ fontSize: "18px", color: "#275F55" }}
+                    <span
+                      style={{
+                        fontWeight: 300,
+                        color: "#555",
+                        fontSize: "14px",
+                      }}
                     >
-                      {job.company}
-                    </p>
-                    <p
-                      className="font-avenir"
-                      style={{ fontSize: "14px", color: "#555" }}
-                    >
-                      {job.dates}
-                    </p>
-                  </div>
-                  <p
-                    className="font-avenir"
-                    style={{
-                      fontSize: "16px",
-                      fontWeight: 500,
-                      marginTop: "2px",
-                    }}
-                  >
-                    {job.role}
+                      {" · "}
+                      {job.location}
+                    </span>
                   </p>
                   <ul style={{ marginTop: "8px", paddingLeft: "20px" }}>
                     {job.bullets.map((b) => (
@@ -305,10 +293,10 @@ export default function Resume() {
             <div className="flex flex-col gap-6">
               {education.map((ed) => (
                 <div key={ed.school}>
-                  <div className="flex justify-between items-baseline gap-2">
+                  <div className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-1">
                     <p
                       className="font-merriweather font-bold"
-                      style={{ fontSize: "16px", color: "#275F55" }}
+                      style={{ fontSize: "18px", color: "#275F55" }}
                     >
                       {ed.school}
                     </p>
@@ -322,21 +310,29 @@ export default function Resume() {
                   <p
                     className="font-avenir"
                     style={{
-                      fontSize: "15px",
+                      fontSize: "16px",
                       fontWeight: 500,
                       marginTop: "2px",
                     }}
                   >
                     {ed.degree}
-                    <br />
-                    {ed.program}
+                    <span
+                      style={{
+                        fontWeight: 300,
+                        color: "#555",
+                        fontSize: "14px",
+                      }}
+                    >
+                      {" · "}
+                      {ed.location}
+                    </span>
                   </p>
                   <p
                     className="font-avenir"
                     style={{
-                      fontSize: "14px",
+                      fontSize: "15px",
                       fontWeight: 300,
-                      lineHeight: 1.6,
+                      lineHeight: 1.7,
                       marginTop: "6px",
                     }}
                   >
@@ -347,6 +343,45 @@ export default function Resume() {
             </div>
           </section>
 
+          <section>
+            <SectionHeading>Leadership Experience</SectionHeading>
+            <div className="flex flex-col gap-8">
+              {leadership.map((item) => (
+                <div key={item.title + item.dates}>
+                  <div className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-1">
+                    <p
+                      className="font-merriweather font-bold"
+                      style={{ fontSize: "18px", color: "#275F55" }}
+                    >
+                      {item.title}
+                    </p>
+                    <p
+                      className="font-avenir"
+                      style={{ fontSize: "14px", color: "#555" }}
+                    >
+                      {item.dates}
+                    </p>
+                  </div>
+                  <ul style={{ marginTop: "8px", paddingLeft: "20px" }}>
+                    {item.bullets.map((b) => (
+                      <li
+                        key={b}
+                        className="font-avenir"
+                        style={{
+                          fontSize: "15px",
+                          fontWeight: 300,
+                          lineHeight: 1.7,
+                          marginBottom: "8px",
+                        }}
+                      >
+                        {b}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+          </section>
           <section>
             <SectionHeading>Skills</SectionHeading>
             <div className="flex flex-col gap-6">

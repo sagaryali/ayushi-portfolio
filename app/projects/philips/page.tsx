@@ -15,7 +15,7 @@ const scopeQuestions = [
     title: "Clinical",
     items: [
       "What parameters do we need to read to detect a high-risk pregnancy?",
-      "How would this change the patients course of pregnancy?",
+      "How would this change the patient's course of pregnancy?",
     ],
   },
   {
@@ -32,7 +32,7 @@ const opportunityInsights = [
     insight:
       "Users must be medically registered to gain patient trust (OBGYNs, GPs, Nurse Practitioners)",
     solution:
-      "Empower medically registered frontline workers to perform early identification of high-risk pregnancies at local facilities, providing the necessary data for specialists (Radiologists, OBGYN's) to determine the subsequent course of care.",
+      "Empower medically registered frontline workers to perform early identification of high-risk pregnancies at local facilities, providing the necessary data for specialists (Radiologists, OBGYNs) to determine the subsequent course of care.",
   },
   {
     insight:
@@ -59,7 +59,7 @@ const validationInsights = [
     insight:
       "One of our user testing sessions revealed that placing the tablet on a flat surface during scans caused back strain, reducing productivity by nearly half.",
     solution:
-      "A compact physical cart that can adjust to a facilities existing infrastructure to alleviate strain and restore productivity.",
+      "A compact physical cart that can adjust to a facility's existing infrastructure to alleviate strain and restore productivity.",
   },
   {
     insight:
@@ -68,7 +68,7 @@ const validationInsights = [
       "Develop a non-black box workflow option that allows professionals to validate AI outputs with manual measurements to build trust.",
   },
   {
-    insight: "Noisy, crowded clinical environments can hinder users ability to hear cues.",
+    insight: "Noisy, crowded clinical environments can hinder users' ability to hear cues.",
     solution:
       "Implement multimodal feedback, such as visual and haptic cues, to ensure effectiveness in noisy clinical environments without depending on sound.",
   },
@@ -430,21 +430,6 @@ export default function Philips() {
               The initiative further underscores Philips&rsquo; commitment to
               improving the lives of 2.5 billion people a year by 2030,
               including 400 million in underserved communities.
-            </p>
-            <p
-              className="font-avenir"
-              style={{ fontSize: "17px", fontWeight: 400, lineHeight: 1.75 }}
-            >
-              Read more about the initiative{" "}
-              <a
-                href="https://www.usa.philips.com/a-w/about/news/archive/standard/news/press/2021/20211110-philips-receives-grant-to-improve-quality-and-accessibility-of-maternal-care-in-low-and-middle-income-countries.html"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{ textDecoration: "underline" }}
-              >
-                here
-              </a>
-              .
             </p>
           </div>
 
@@ -923,15 +908,15 @@ export default function Philips() {
               <strong>Lumify handheld probe</strong>
             </p>
             <p style={{ marginBottom: "16px" }}>
-              The solution was built around Philip&rsquo;s existing handheld
+              The solution was built around Philips&rsquo; existing handheld
               ultrasound technology that provides real-time assessment.
             </p>
             <p style={{ marginBottom: "4px" }}>
               <strong>Tablet</strong>
             </p>
             <p style={{ marginBottom: "16px" }}>
-              The digital product would be provided on a compact, light
-              weight digital tablet
+              The digital product would be provided on a compact, lightweight
+              digital tablet
             </p>
             <p style={{ marginBottom: "4px" }}>
               <strong>Modular Cart</strong>
@@ -992,7 +977,7 @@ export default function Philips() {
                 marginBottom: "24px",
               }}
             >
-              <strong>Fun Fact:</strong> In India, the role of family was
+              <strong>Regional insight:</strong> In India, the role of family was
               identified as important, meaning we had to not only account for
               the patient in the journey, but also the family in terms of
               education and awareness, and involvement in the treatment.
@@ -1047,7 +1032,7 @@ export default function Philips() {
                 marginBottom: "24px",
               }}
             >
-              <strong>Fact:</strong> In Kenya, we noticed that higher
+              <strong>Regional insight:</strong> In Kenya, we noticed that higher
               facilities were less accessible, requiring us to equip lower
               facilities with our technology solution, both during early
               checkups and deliveries, and only sending very selective cases
@@ -1154,6 +1139,21 @@ export default function Philips() {
               </div>
             ))}
           </div>
+          <p
+            className="font-avenir"
+            style={{ fontSize: "17px", fontWeight: 400, lineHeight: 1.75, marginTop: "48px" }}
+          >
+            Read more about the initiative{" "}
+            <a
+              href="https://www.usa.philips.com/a-w/about/news/archive/standard/news/press/2021/20211110-philips-receives-grant-to-improve-quality-and-accessibility-of-maternal-care-in-low-and-middle-income-countries.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ textDecoration: "underline" }}
+            >
+              here
+            </a>
+            .
+          </p>
         </ScrollSnapSection>
       </div>
 

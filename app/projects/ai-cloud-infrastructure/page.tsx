@@ -7,7 +7,7 @@ import Image from "next/image";
 const stakeholders = [
   {
     type: "Users:",
-    title: "Capacity Planners",
+    title: "Demand Planners",
     description: "responsible for planning & delivering to end customers",
     image: "/projects/ai-cloud/stakeholder-planner.png",
   },
@@ -15,7 +15,7 @@ const stakeholders = [
     type: "Indirect Users:",
     title: "Sales Teams",
     description:
-      "responsible for coordinating with customers on their needs and communicating it to Planners",
+      "responsible for coordinating with customers on their needs and communicating it to Demand Planners",
     image: "/projects/ai-cloud/stakeholder-sales.png",
   },
   {
@@ -32,16 +32,16 @@ const journeySteps = [
     step: 1,
     title: "Customer requests for capacity",
     description:
-      "Customer requests for capacity and any supporting infrastructure to the Sales Team, which are then communicated to the Planners.",
+      "Customer requests for capacity and any supporting infrastructure to the Sales Team, which are then communicated to the Demand Planners.",
     userNeed:
       "Quick communication with Sales, visibility into overall supply and demand",
     customerNeed: "High confidence confirmation of request",
   },
   {
     step: 2,
-    title: "Planner identifies supply to meet customer needs",
+    title: "Demand Planner identifies supply to meet customer needs",
     description:
-      "The Planners identify supply as per the customers requested duration, regions, product types and quantities. Any deviations from the customer requests are further discussed with the customer.",
+      "The Demand Planners identify supply as per the customers requested duration, regions, product types and quantities. Any deviations from the customer requests are further discussed with the customer.",
     userNeed:
       "Full visibility into all available supply and all incoming customer requests",
     customerNeed:
@@ -49,18 +49,18 @@ const journeySteps = [
   },
   {
     step: 3,
-    title: "Planners block the supply for the customer",
+    title: "Demand Planners block the supply for the customer",
     description:
-      "Once the Customer and Planners reach an agreement, the supply is blocked off so that it is not available for any other customer. However, as we get closer to the delivery date, the amount, dates, or products can still be changed based on availability, priority, and more.",
+      "Once the Customer and Demand Planners reach an agreement, the supply is blocked off so that it is not available for any other customer. However, as we get closer to the delivery date, the amount, dates, or products can still be changed based on availability, priority, and more.",
     userNeed:
       "Ability to 'tetris' requests for the most beneficial match, tracking of capacity readiness closer to delivery",
     customerNeed: "Constant transparency about request status, clear communication about action items",
   },
   {
     step: 4,
-    title: "Planners schedule ramped delivery to the customer and fix any blockers in the process",
+    title: "Demand Planners schedule ramped delivery to the customer and fix any blockers in the process",
     description:
-      "Once the delivery is confirmed to the customer, the Planners create a delivery plan and ensure that blockers (if any) are flagged to the right team members.",
+      "Once the delivery is confirmed to the customer, the Demand Planners create a delivery plan and ensure that blockers (if any) are flagged to the right team members.",
     userNeed:
       "Ability to establish delivery plans as per user needs. Visibility into delivery phases, timelines and alerts of any blockers",
     customerNeed:
@@ -68,9 +68,9 @@ const journeySteps = [
   },
   {
     step: 5,
-    title: "Planners address any ongoing needs of the customer",
+    title: "Demand Planners address any ongoing needs of the customer",
     description:
-      "After initial delivery, Planners continue to address needs of the customer such as reducing/increasing the capacity amounts, adding infrastructure, changing the end dates, etc.",
+      "After initial delivery, Demand Planners continue to address needs of the customer such as reducing/increasing the capacity amounts, adding infrastructure, changing the end dates, etc.",
     userNeed:
       "Strategic insights into the delivery evolution over time for highest customer satisfaction and business impact",
     customerNeed:
@@ -99,7 +99,7 @@ const designPlan = {
       subtitle:
         "Build relationships with users and stakeholders, involving them in the process",
       items: [
-        "Host co-create workshops with users",
+        "Host co-creation workshops with users",
         "Show continuous progress for feedback",
         "Support user migration to new workflows",
       ],
@@ -132,7 +132,7 @@ const userImpact = [
     num: 1,
     title: "Increasing efficiency",
     description:
-      "Reduced planner time per customer from ~10 to ~2 minutes",
+      "Reduced planning time from ~10 to ~2 minutes per plan",
     quote:
       '"It\'s helpful being able to edit in the views and it updates all the data. Because then I don\'t have to go into the details until we\'re going close to delivery."',
   },
@@ -162,15 +162,15 @@ const businessImpact = [
   },
   {
     num: 2,
-    title: "Consolidating Workflows",
+    title: "Cross-team collaboration",
     description:
-      "Deliveries supported with necessary infrastructure",
+      "Ensuring all teams involved in planning and delivering for customers are aligned and do not have to go into constant war rooms to address customer escalations.",
   },
   {
     num: 3,
     title: "Increasing fulfillment rates",
     description:
-      "Increasing fulfillment rates of customer deals, minimizing idle capacity that in turn recovers lost revenue for every chip per hour",
+      "Increasing fulfillment rates of customer deals, minimizing idle capacity that in turn recovers revenue lost for every hour it sits unused",
   },
 ];
 
@@ -266,7 +266,7 @@ export default function AiCloudInfrastructure() {
                   className="font-avenir"
                   style={{ fontSize: "15px", fontWeight: 500 }}
                 >
-                  User Experience design
+                  User Experience Design
                 </p>
                 <p
                   className="font-avenir"
@@ -363,7 +363,7 @@ export default function AiCloudInfrastructure() {
               style={{ fontSize: "17px", fontWeight: 400, lineHeight: 1.75 }}
             >
               The challenge extends beyond just operational complexity, to
-              helping Capacity Planners and Sales teams work effectively
+              helping Demand Planners and Sales teams work effectively
               across interconnected systems and teams, and enabling them to make
               high-impact decisions with confidence.
             </p>
@@ -401,7 +401,7 @@ export default function AiCloudInfrastructure() {
               }}
             >
               <li>
-                Reducing planning time per customer from ~10 minutes to ~2 minutes
+                Reducing planning time from ~10 minutes to ~2 minutes per plan
               </li>
               <li>
                 Unifying five fragmented dashboards and spreadsheets into a single
@@ -426,8 +426,8 @@ export default function AiCloudInfrastructure() {
               className="font-avenir"
               style={{ fontSize: "17px", fontWeight: 400, lineHeight: 1.75 }}
             >
-              As part of a broader effort to support Planners, sales teams, and
-              customers, I lead design for the Planner-facing workflows, focused
+              As part of a broader effort to support Demand Planners, sales teams, and
+              customers, I lead design for the Demand Planner-facing workflows, focused
               on planning and delivery.
             </p>
           </div>
@@ -582,7 +582,7 @@ export default function AiCloudInfrastructure() {
                         <div style={{ width: "40px", height: "40px", flexShrink: 0, position: "relative" }}>
                           <Image
                             src="/projects/ai-cloud/avatar-planner.png"
-                            alt="Planner"
+                            alt="Demand Planner"
                             fill
                             className="object-contain"
                           />
@@ -812,7 +812,7 @@ export default function AiCloudInfrastructure() {
             }}
           >
             Therefore, our goal was to keep the ease and speed of spreadsheets,
-            but design more reliant and smarter ways of working.
+            but design more reliable and smarter ways of working.
           </p>
         </ScrollSnapSection>
 
@@ -909,7 +909,7 @@ export default function AiCloudInfrastructure() {
             }}
           >
             The MVP (minimum viable product) covers 3 solutions that provide the
-            Capacity Planners the capabilities to support customer needs:
+            Demand Planners the capabilities to support customer needs:
           </p>
 
           {/* Solution 1 */}
@@ -933,7 +933,7 @@ export default function AiCloudInfrastructure() {
                 marginBottom: "24px",
               }}
             >
-              <p style={{ marginBottom: "8px" }}>As a planner...</p>
+              <p style={{ marginBottom: "8px" }}>As a demand planner...</p>
               <p style={{ marginBottom: "8px" }}>
                 I am able to{" "}
                 <strong>sync budget with real-time supply and demand</strong>,
@@ -951,7 +951,7 @@ export default function AiCloudInfrastructure() {
               <p>
                 I am able to{" "}
                 <strong>
-                  prioritize capacity requests based on customer need and business impact
+                  prioritize customer requests based on customer need and business impact
                 </strong>
                 , instead of reactive fire-fighting, which is{" "}
                 <strong>
@@ -1009,7 +1009,7 @@ export default function AiCloudInfrastructure() {
                 marginBottom: "24px",
               }}
             >
-              <p style={{ marginBottom: "8px" }}>As a planner...</p>
+              <p style={{ marginBottom: "8px" }}>As a demand planner...</p>
               <p style={{ marginBottom: "8px" }}>
                 I am able to{" "}
                 <strong>
@@ -1089,7 +1089,7 @@ export default function AiCloudInfrastructure() {
                 marginBottom: "24px",
               }}
             >
-              <p style={{ marginBottom: "8px" }}>As a planner,</p>
+              <p style={{ marginBottom: "8px" }}>As a demand planner,</p>
               <p style={{ marginBottom: "8px" }}>
                 I am able to{" "}
                 <strong>
@@ -1103,11 +1103,11 @@ export default function AiCloudInfrastructure() {
                 .
               </p>
               <p>
-                As a planner, I am able to{" "}
+                As a demand planner, I am able to{" "}
                 <strong>
                   evaluate overall profitability, business impact, and customer satisfaction
                 </strong>
-                , ensuring that chips do not sit idle.
+                , ensuring that capacity does not sit idle.
               </p>
             </div>
             <div style={{ position: "relative", marginBottom: "8px" }}>

@@ -331,7 +331,7 @@ export default function Philips() {
                 className="font-avenir"
                 style={{ fontSize: "15px", fontWeight: 500, marginTop: "4px" }}
               >
-                Design research and strategy, User Experience design, Service
+                Design Research and Strategy, User Experience Design, Service
                 Design
               </p>
             </div>

@@ -20,17 +20,17 @@ const projects = [
     image: "/projects/ai-cloud-cover.png",
     title: "Designing workflows for AI + Cloud Infrastructure planning",
     timeline: "August 2025 – Present",
-    capabilities: ["User Experience design", "Systems Design"],
+    capabilities: ["User Experience Design", "Systems Design"],
     team: "Senior UX Designer (Ayushi Shah), Product Manager, Technical Program Manager, UX Research, Engineering",
     summary:
-      "Consolidated a fragmented cloud capacity planning process into a unified workflow across stakeholders. The new system slashed planning time by 80% and minimized idle capacity, directly recovering revenue for every chip per hour previously lost.",
+      "Consolidated a fragmented cloud capacity planning process into a unified workflow across stakeholders. The new system slashed planning time by 80% and minimized idle capacity, directly recovering revenue previously lost for every hour capacity sat idle.",
   },
   {
     slug: "philips",
     image: "/projects/project-2-cover.png",
     title: "Philips X Gates Foundation: AI for Maternal Healthcare",
     timeline: "August 2022 – July 2023",
-    capabilities: ["Design research & strategy", "User Experience design", "Service Design"],
+    capabilities: ["Design Research & Strategy", "User Experience Design", "Service Design"],
     team: "Design, Business, Engineering, Clinical across India, Europe, and the US",
     summary:
       "Developed an AI-powered ultrasound screening tool to help frontline workers identify high-risk pregnancies for women in underserved communities. The project underscores Philips' commitment to improving the lives of 2.5 billion people a year by 2030, including 400 million in underserved communities.",

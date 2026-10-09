@@ -43,7 +43,7 @@ const journeySteps = [
     description:
       "The Demand Planners identify supply as per the customers requested duration, regions, product types and quantities. Any deviations from the customer requests are further discussed with the customer.",
     userNeed:
-      "Full visibility into all available supply and all incoming customer requests",
+      "Full visibility into all available supply, with drill down capabilities, and all incoming customer requests to compare requests.",
     customerNeed:
       "Timely communication regarding any deviations from the request",
   },
@@ -58,23 +58,33 @@ const journeySteps = [
   },
   {
     step: 4,
-    title: "Demand Planners schedule ramped delivery to the customer and fix any blockers in the process",
+    title: "Demand Planners deliver capacity as and when it becomes available",
     description:
-      "Once the delivery is confirmed to the customer, the Demand Planners create a delivery plan and ensure that blockers (if any) are flagged to the right team members.",
+      "As the capacity becomes ready to deliver, the Demand Planner begins delivering it, either in tranches or as a whole. Each time the Demand Planner initiates this, it goes through the process of customer approval before being delivered.",
     userNeed:
-      "Ability to establish delivery plans as per user needs. Visibility into delivery phases, timelines and alerts of any blockers",
+      "Visibility into capacity readiness and communication on customer approval from customer-facing systems.",
+    customerNeed:
+      "Communications on the process to accept the delivery and the process of beginning usage.",
+  },
+  {
+    step: 5,
+    title: "Demand Planners continue to deliver the capacity to fulfill the customer request",
+    description:
+      "Once the delivery has been initiated, the Demand Planners continue to deliver as per the plan and ensure that blockers (if any) are flagged to the right team members.",
+    userNeed:
+      "Ability to establish delivery plans as per capacity readiness and customer needs. Visibility into delivery phases, timelines and alerts of any blockers",
     customerNeed:
       "Point of contact to address blockers, communication for any changes in delivery plan",
   },
   {
-    step: 5,
+    step: 6,
     title: "Demand Planners address any ongoing needs of the customer",
     description:
       "After initial delivery, Demand Planners continue to address needs of the customer such as reducing/increasing the capacity amounts, adding infrastructure, changing the end dates, etc.",
     userNeed:
       "Strategic insights into the delivery evolution over time for highest customer satisfaction and business impact",
     customerNeed:
-      "Continuous services, ability to change reservation as per evolving needs",
+      "Continuous services, ability to change delivery plan as per evolving needs",
   },
 ];
 

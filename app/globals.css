@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Merriweather:wght@700&family=Nunito:wght@300;400;500;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Nunito:wght@300;400;500;600;800&display=swap');
 @import "tailwindcss";
 
 :root {
@@ -28,8 +28,4 @@
 
 .font-avenir {
   font-family: 'Nunito', sans-serif;
-}
-
-.font-handwriting {
-  font-family: 'La Belle Aurore', cursive;
 }

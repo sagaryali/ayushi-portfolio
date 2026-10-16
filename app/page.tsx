@@ -4,7 +4,6 @@ import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import Image from "next/image";
 import Link from "next/link";
-import DraggablePhotos from "./components/DraggablePhotos";
 import { useState, useEffect } from "react";
 
 const projects = [
@@ -152,7 +151,6 @@ export default function Home() {
           </div>
         </div>
 
-        <DraggablePhotos />
 
         {/* Scroll cue */}
         <button

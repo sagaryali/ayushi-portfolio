@@ -4,6 +4,7 @@ import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import Image from "next/image";
 import Link from "next/link";
+import DraggablePhotos from "./components/DraggablePhotos";
 import { useState, useEffect } from "react";
 
 const projects = [
@@ -22,7 +23,11 @@ const projects = [
     image: "/projects/project-2-cover.png",
     title: "Philips X Gates Foundation: AI for Maternal Healthcare",
     timeline: "August 2022 – July 2023",
-    capabilities: ["Design Research & Strategy", "User Experience Design", "Service Design"],
+    capabilities: [
+      "Design Research & Strategy",
+      "User Experience Design",
+      "Service Design",
+    ],
     team: "Design, Business, Engineering, Clinical across India, Europe, and the US",
     summary:
       "Developed an AI-powered ultrasound screening tool to help frontline workers identify high-risk pregnancies for women in underserved communities. The project underscores Philips' commitment to improving the lives of 2.5 billion people a year by 2030, including 400 million in underserved communities.",
@@ -109,37 +114,45 @@ export default function Home() {
         {/* Hero */}
         <div
           style={{ maxWidth: "1120px", margin: "0 auto", width: "100%" }}
-          className="px-4 md:px-12 flex-1 flex flex-col justify-center pb-24"
+          className="px-4 md:px-12 flex-1 flex flex-col justify-center items-center pb-24"
         >
-          <h1
-            className="font-merriweather font-bold"
-            style={{
-              fontSize: "clamp(52px, 10vw, 136px)",
-              lineHeight: 1.02,
-              letterSpacing: "-0.02em",
-            }}
-          >
-            Hi, I&apos;m Ayushi, a
-            <span
-              className={`role-word ${roleVisible ? "visible" : "hidden"}`}
-              style={{ color: "#275F55", display: "block", marginTop: "0.2em" }}
+          <div className="w-fit max-w-full text-left">
+            <h1
+              className="font-merriweather font-bold"
+              style={{
+                fontSize: "clamp(38px, 6vw, 80px)",
+                lineHeight: 1.02,
+                letterSpacing: "-0.02em",
+              }}
             >
-              {roles[roleIndex]}
-            </span>
-          </h1>
-          <p
-            className="font-merriweather font-bold"
-            style={{
-              fontSize: "clamp(24px, 3.4vw, 48px)",
-              lineHeight: 1.3,
-              marginTop: "48px",
-              maxWidth: "1000px",
-            }}
-          >
-            I enjoy doing the messy work to craft meaningful impact for people,
-            business, and the planet.
-          </p>
+              Hi, I&apos;m Ayushi, a
+              <span
+                className={`role-word ${roleVisible ? "visible" : "hidden"}`}
+                style={{
+                  color: "#275F55",
+                  display: "block",
+                  marginTop: "0.2em",
+                }}
+              >
+                {roles[roleIndex]}
+              </span>
+            </h1>
+            <p
+              className="font-merriweather font-bold"
+              style={{
+                fontSize: "clamp(18px, 2.1vw, 28px)",
+                lineHeight: 1.4,
+                marginTop: "32px",
+                maxWidth: "760px",
+              }}
+            >
+              I enjoy doing the messy work to craft meaningful impact for
+              people, business, and the planet.
+            </p>
+          </div>
         </div>
+
+        <DraggablePhotos />
 
         {/* Scroll cue */}
         <button
@@ -147,7 +160,9 @@ export default function Home() {
           className="scroll-cue font-avenir"
           aria-label="Scroll to view my work"
           onClick={() =>
-            document.getElementById("work")?.scrollIntoView({ behavior: "smooth" })
+            document
+              .getElementById("work")
+              ?.scrollIntoView({ behavior: "smooth" })
           }
         >
           <span>Scroll to view my work</span>
@@ -169,10 +184,16 @@ export default function Home() {
         </button>
       </div>
 
-      <div style={{ maxWidth: "1120px", margin: "0 auto" }} className="px-4 md:px-12">
-
+      <div
+        style={{ maxWidth: "1120px", margin: "0 auto" }}
+        className="px-4 md:px-12"
+      >
         {/* Featured Projects */}
-        <section id="work" className="pt-16 md:pt-24 pb-20 md:pb-[120px]" style={{ scrollMarginTop: "16px" }}>
+        <section
+          id="work"
+          className="pt-16 md:pt-24 pb-20 md:pb-[120px]"
+          style={{ scrollMarginTop: "16px" }}
+        >
           <h2
             className="font-merriweather font-bold text-[32px] md:text-[48px]"
             style={{ color: "#275F55", marginBottom: "40px" }}
@@ -180,7 +201,9 @@ export default function Home() {
             Featured Projects
           </h2>
 
-          <div style={{ display: "flex", flexDirection: "column", gap: "80px" }}>
+          <div
+            style={{ display: "flex", flexDirection: "column", gap: "80px" }}
+          >
             {projects.map((project) => (
               <article key={project.slug}>
                 <div className="flex flex-col md:flex-row md:items-stretch gap-8 md:gap-12">
@@ -208,7 +231,12 @@ export default function Home() {
 
                     <p
                       className="font-avenir"
-                      style={{ fontSize: "17px", fontWeight: 400, lineHeight: 1.75, marginTop: "24px" }}
+                      style={{
+                        fontSize: "17px",
+                        fontWeight: 400,
+                        lineHeight: 1.75,
+                        marginTop: "24px",
+                      }}
                     >
                       {project.summary}
                     </p>
@@ -226,9 +254,23 @@ export default function Home() {
                           borderRadius: "24px",
                         }}
                       >
-                        <Image src="/icons/lock.png" alt="" width={28} height={28} />
+                        <Image
+                          src="/icons/lock.png"
+                          alt=""
+                          width={28}
+                          height={28}
+                        />
                         View case study
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                        <svg
+                          width="16"
+                          height="16"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="2.5"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        >
                           <line x1="5" y1="12" x2="19" y2="12" />
                           <polyline points="12 5 19 12 12 19" />
                         </svg>
@@ -247,30 +289,75 @@ export default function Home() {
                   className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-10 p-5 md:px-8 md:py-6"
                 >
                   <div>
-                    <p className="font-avenir" style={{ fontSize: "13px", fontWeight: 300, textTransform: "uppercase", letterSpacing: "0.08em", color: "#666" }}>
+                    <p
+                      className="font-avenir"
+                      style={{
+                        fontSize: "13px",
+                        fontWeight: 300,
+                        textTransform: "uppercase",
+                        letterSpacing: "0.08em",
+                        color: "#666",
+                      }}
+                    >
                       Timeline
                     </p>
-                    <p className="font-avenir" style={{ fontSize: "15px", fontWeight: 500, marginTop: "4px" }}>
+                    <p
+                      className="font-avenir"
+                      style={{
+                        fontSize: "15px",
+                        fontWeight: 500,
+                        marginTop: "4px",
+                      }}
+                    >
                       {project.timeline}
                     </p>
                   </div>
                   <div>
-                    <p className="font-avenir" style={{ fontSize: "13px", fontWeight: 300, textTransform: "uppercase", letterSpacing: "0.08em", color: "#666" }}>
+                    <p
+                      className="font-avenir"
+                      style={{
+                        fontSize: "13px",
+                        fontWeight: 300,
+                        textTransform: "uppercase",
+                        letterSpacing: "0.08em",
+                        color: "#666",
+                      }}
+                    >
                       Capabilities
                     </p>
                     <div style={{ marginTop: "4px" }}>
                       {project.capabilities.map((c) => (
-                        <p key={c} className="font-avenir" style={{ fontSize: "15px", fontWeight: 500 }}>
+                        <p
+                          key={c}
+                          className="font-avenir"
+                          style={{ fontSize: "15px", fontWeight: 500 }}
+                        >
                           {c}
                         </p>
                       ))}
                     </div>
                   </div>
                   <div>
-                    <p className="font-avenir" style={{ fontSize: "13px", fontWeight: 300, textTransform: "uppercase", letterSpacing: "0.08em", color: "#666" }}>
+                    <p
+                      className="font-avenir"
+                      style={{
+                        fontSize: "13px",
+                        fontWeight: 300,
+                        textTransform: "uppercase",
+                        letterSpacing: "0.08em",
+                        color: "#666",
+                      }}
+                    >
                       Team
                     </p>
-                    <p className="font-avenir" style={{ fontSize: "15px", fontWeight: 500, marginTop: "4px" }}>
+                    <p
+                      className="font-avenir"
+                      style={{
+                        fontSize: "15px",
+                        fontWeight: 500,
+                        marginTop: "4px",
+                      }}
+                    >
                       {project.team}
                     </p>
                   </div>
@@ -279,7 +366,6 @@ export default function Home() {
             ))}
           </div>
         </section>
-
       </div>
 
       <Footer />

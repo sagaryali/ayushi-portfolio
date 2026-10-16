@@ -1,6 +1,7 @@
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 import Image from "next/image";
+import ToolLogos from "../components/ToolLogos";
 
 export default function About() {
   return (
@@ -93,6 +94,10 @@ export default function About() {
               </a>{" "}
               or on social platforms.
             </p>
+
+            <div style={{ marginTop: "48px" }}>
+              <ToolLogos />
+            </div>
           </div>
         </section>
 

@@ -6,14 +6,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 
-const tools: { name: string; description: string; src: string }[] = [
-  { name: "Industrial Design", description: "B.D. in Industrial and Product Design", src: "/logos/logo1.png" },
-  { name: "Design Research", description: "Design Research and Strategy for global clients", src: "/logos/logo2.png" },
-  { name: "Philips x Gates", description: "Experience Designer for a Philips X Gates Foundation initiative", src: "/logos/logo3.png" },
-  { name: "HCI", description: "M.S. in Human Computer Interaction and UX Design", src: "/logos/logo4.png" },
-  { name: "Fortune 5", description: "UX Designer for a Fortune 5 client's AI and Cloud business", src: "/logos/logo5.png" },
-];
-
 const projects = [
   {
     slug: "ai-cloud-infrastructure",
@@ -40,7 +32,6 @@ const projects = [
 const roles = ["designer", "storyteller", "strategist"];
 
 export default function Home() {
-  const [tooltip, setTooltip] = useState<{ x: number; y: number; label: string } | null>(null);
   const [roleIndex, setRoleIndex] = useState(0);
   const [roleVisible, setRoleVisible] = useState(true);
 
@@ -71,109 +62,117 @@ export default function Home() {
           opacity: 0;
           transform: translateY(6px);
         }
-        .tool-tooltip {
+        .scroll-cue {
           position: absolute;
-          bottom: calc(100% + 14px);
+          bottom: 32px;
           left: 50%;
           transform: translateX(-50%);
-          background: #275F55;
-          color: #FDF6EC;
-          font-family: 'Nunito', sans-serif;
-          font-size: 13px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 8px;
+          background: none;
+          border: none;
+          cursor: pointer;
+          color: #275F55;
+          font-size: 15px;
           font-weight: 600;
+          letter-spacing: 0.02em;
           padding: 8px 16px;
-          border-radius: 999px;
-          white-space: nowrap;
-          pointer-events: none;
-          opacity: 0;
-          transition: opacity 0.2s ease, transform 0.2s ease;
-          transform: translateX(-50%) translateY(4px);
-          letter-spacing: 0.01em;
         }
-        .tool-tooltip::after {
-          content: '';
-          position: absolute;
-          top: 100%;
-          left: 50%;
-          transform: translateX(-50%);
-          border: 6px solid transparent;
-          border-top-color: #275F55;
+        .scroll-cue:hover .scroll-cue-arrow {
+          color: #000;
         }
-        .tool-circle:hover .tool-tooltip {
-          opacity: 1;
-          transform: translateX(-50%) translateY(0);
+        .scroll-cue-arrow {
+          animation: scroll-cue-bounce 1.8s ease-in-out infinite;
+          transition: color 0.2s ease;
         }
-        .tool-circle {
-          position: relative;
+        @keyframes scroll-cue-bounce {
+          0%, 100% { transform: translateY(0); }
+          50% { transform: translateY(8px); }
+        }
+        @media (prefers-reduced-motion: reduce) {
+          .scroll-cue-arrow { animation: none; }
         }
       `}</style>
 
-      <Nav />
-
-      <div style={{ maxWidth: "1120px", margin: "0 auto" }} className="px-4 md:px-12">
+      <div
+        style={{
+          minHeight: "100dvh",
+          display: "flex",
+          flexDirection: "column",
+          position: "relative",
+        }}
+      >
+        <Nav />
 
         {/* Hero */}
-        <section className="pt-16 md:pt-[120px] pb-0">
+        <div
+          style={{ maxWidth: "1120px", margin: "0 auto", width: "100%" }}
+          className="px-4 md:px-12 flex-1 flex flex-col justify-center pb-24"
+        >
           <h1
-            className="font-merriweather font-bold text-[32px] md:text-[48px]"
-            style={{ lineHeight: 1.2 }}
+            className="font-merriweather font-bold"
+            style={{
+              fontSize: "clamp(52px, 10vw, 136px)",
+              lineHeight: 1.02,
+              letterSpacing: "-0.02em",
+            }}
           >
-            Hi, I&apos;m Ayushi, a{" "}
+            Hi, I&apos;m Ayushi, a
             <span
               className={`role-word ${roleVisible ? "visible" : "hidden"}`}
-              style={{ color: "#275F55" }}
+              style={{ color: "#275F55", display: "block", marginTop: "0.2em" }}
             >
               {roles[roleIndex]}
             </span>
           </h1>
           <p
-            className="font-merriweather font-bold text-[20px] md:text-[28px]"
-            style={{ lineHeight: 1.4, marginTop: "32px", maxWidth: "760px" }}
+            className="font-merriweather font-bold"
+            style={{
+              fontSize: "clamp(24px, 3.4vw, 48px)",
+              lineHeight: 1.3,
+              marginTop: "48px",
+              maxWidth: "1000px",
+            }}
           >
             I enjoy doing the messy work to craft meaningful impact for people,
             business, and the planet.
           </p>
-        </section>
+        </div>
 
-        {/* Tool logos */}
-        {tools.length > 0 && (
-          <section className="pt-10 md:pt-[72px] pb-0">
-            <div style={{ display: "flex", flexWrap: "wrap", gap: "20px" }}>
-              {tools.map((tool) => (
-                <div
-                  key={tool.name}
-                  className="tool-circle"
-                  style={{
-                    width: "96px",
-                    height: "96px",
-                    borderRadius: "50%",
-                    backgroundColor: "#FDF6EC",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    boxShadow: "6px 6px 14px rgba(0,0,0,0.12), -6px -6px 14px rgba(255,255,255,0.7)",
-                    cursor: "pointer",
-                    transition: "transform 0.2s ease, box-shadow 0.2s ease",
-                  }}
-                  onMouseEnter={(e) => (e.currentTarget.style.transform = "scale(1.1)", e.currentTarget.style.boxShadow = "10px 10px 22px rgba(0,0,0,0.16), -8px -8px 18px rgba(255,255,255,0.8)")}
-                  onMouseLeave={(e) => (e.currentTarget.style.transform = "scale(1)", e.currentTarget.style.boxShadow = "6px 6px 14px rgba(0,0,0,0.12), -6px -6px 14px rgba(255,255,255,0.7)")}
-                >
-                  <Image
-                    src={tool.src}
-                    alt={tool.name}
-                    width={tool.src === "/logos/logo4.png" ? 36 : 52}
-                    height={tool.src === "/logos/logo4.png" ? 36 : 52}
-                    className="object-contain"
-                  />
-                  <div className="tool-tooltip">{tool.description}</div>
-                </div>
-              ))}
-            </div>
-          </section>
-        )}
+        {/* Scroll cue */}
+        <button
+          type="button"
+          className="scroll-cue font-avenir"
+          aria-label="Scroll to view my work"
+          onClick={() =>
+            document.getElementById("work")?.scrollIntoView({ behavior: "smooth" })
+          }
+        >
+          <span>Scroll to view my work</span>
+          <svg
+            className="scroll-cue-arrow"
+            width="28"
+            height="28"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            aria-hidden="true"
+          >
+            <path d="M12 5v14" />
+            <path d="m19 12-7 7-7-7" />
+          </svg>
+        </button>
+      </div>
+
+      <div style={{ maxWidth: "1120px", margin: "0 auto" }} className="px-4 md:px-12">
 
         {/* Featured Projects */}
-        <section className="pt-16 md:pt-24 pb-20 md:pb-[120px]">
+        <section id="work" className="pt-16 md:pt-24 pb-20 md:pb-[120px]" style={{ scrollMarginTop: "16px" }}>
           <h2
             className="font-merriweather font-bold text-[32px] md:text-[48px]"
             style={{ color: "#275F55", marginBottom: "40px" }}
